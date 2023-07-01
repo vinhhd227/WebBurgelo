@@ -1,0 +1,150 @@
+@model ProductModel
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Menu".ToUpper();
+}
+<!--Product_info-->
+<div class="container-xxl">
+    <div class="container-fluid" id="category_ctn">
+        <div class="row">
+            <div class="col-12 col-lg-8 row product_info ">
+                <div class="img_ctn col-12 col-sm-6">
+                    @{
+                        StringBuilder sb = new StringBuilder();
+                        sb.Append(@Model.ProductName.ToLower().Replace(" ", "_")).Append(".png");
+                        string imgName = sb.ToString();
+                    }
+                    <img src="~/content/images/menu/@Model.category.CategoryName.ToLower()/@imgName"
+                        class="card-img-top" alt="...">
+                    <div class="d-lg-none">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 ">
+                    @* <div class="product_rating mb-3">
+                        <span>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <a href="#">(<span>1</span> customer review)</a>
+                    </div> *@
+                    <div class="product_detail">
+                        <h5 class="product_name">@Model.ProductName</h5>
+                        <div class="price_block d-flex ps-0 mb-5">
+                            <div class="currency color--dark">$</div>
+                            <div class="price color--dark">@Model.Price</div>
+                        </div>
+                        <p class="text--subfont">@Model.Description</p>
+                    </div>
+                    @switch (Model.CategoryId)
+                    {
+                        case 1:
+                        {
+                            <div class="product_option d-flex flex-column text--subfont">
+                        <label for="">Sauce:</label>
+                        <select class="rounded-pill border-1 border px-3 py-2 " id="sauce">
+                            <option value="deafault">Choose an option</option>
+                            <option value="bbq_sauce">BBQ Sauce</option>
+                            <option value="chilli_sauce">Chilli Sauce</option>
+                            <option value="ketchup">Ketchup</option>
+                        </select>
+                        <label for="">Size:</label>
+                        <select id="size" class="rounded-pill border-1 border px-3 py-2 text--subfont focus--shadow">
+                            <option value="deafault">Choose an option</option>
+                            <option value="small">Small</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+                        break;
+                        }
+                        case 2:
+                        {
+                        <div class="product_option d-flex flex-column text--subfont">
+                        <label for="">Size:</label>
+                        <select id="size" class="rounded-pill border-1 border px-3 py-2 text--subfont focus--shadow">
+                            <option value="deafault">Choose an option</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                        </select>
+                        </div>
+                        break;
+                        }
+                        case 3:
+                        {
+                         <div class="product_option d-flex flex-column text--subfont">
+                        <label for="">Size:</label>
+                        <select id="size" class="rounded-pill border-1 border px-3 py-2 text--subfont focus--shadow">
+                            <option value="deafault">Choose an option</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                        </select>
+                        </div>
+                        break;
+                        }
+                        case 4:
+                        {
+                        break;
+                        }
+                        case 5:
+                        {
+                        <div class="product_option d-flex flex-column text--subfont">
+                        <label for="">Size:</label>
+                        <select id="size" class="rounded-pill border-1 border px-3 py-2 text--subfont focus--shadow">
+                            <option value="deafault">Choose an option</option>
+                            <option value="small">Small</option>
+                            <option value="large">Large</option>
+                        </select>
+                        </div>
+                        break;
+                        }
+                        case 6:
+                        {
+                        break;
+                        }
+                        default:
+                        {
+                            break;
+                        }
+                    }
+              
+                    <div class="mt-3">
+                        <form method="post" asp-controller="cart" asp-action="AddToCart">
+                             <input  name="productid" id="productid"
+                                class="quantity rounded-pill border-1 border px-3 py-2"
+                                value="@Model.ProductId" hidden readonly>
+                                <div class="mt-3 d-flex">
+                            <input type="number" name="quantity" id="quantity"
+                                class="quantity rounded-pill border-1 border px-3 py-2" min="1" step="1"
+                                value="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button type="submit" class="btn rounded-pill btn__a btn--yellow btn--hover">
+                                <span><i class="fa-solid fa-cart-shopping"></i>&nbsp;ADD TO CART</span>
+                            </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="product_meta d-flex flex-column mt-3">
+                        <div><span class="product_meta--sku">SKU:</span>&nbsp;N/A</div>
+                        <div><span class="product_meta--category">Category: </span>&nbsp;<a href="">BURGERS</a></div>
+                        <div><span class="product_meta--sku--tag">Tag: </span>&nbsp;<a href="">burger</a>, <a
+                                href="">sale</a></div>
+                    </div>
+                    <h2 class="guaranteed">Guaranteed Safe Checkout</h2>
+                    <img src="~/content/images/menu/momo.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 position-sticky border-start">
+                <div class="evelator position-sticky">
+                    <partial name="_MenuEvelator" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,181 @@
+@using System.Text;
+@model List<OrderManageModel>
+
+@{
+
+}
+<h1>@ViewData["Title"]</h1>
+@if (@TempData["message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["message"]
+    </div>
+}
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" asp-controller="ordermanage" asp-action="index">All</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" asp-controller="ordermanage" asp-action="index" asp-route-confirmstatus=0
+                    asp-route-paymentstatus=0 asp-route-deliverystatus=0>New
+                    Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="ordermanage" asp-action="index" asp-route-confirmstatus=1
+                    asp-route-deliverystatus=0>Waiting Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="ordermanage" asp-action="index" asp-route-confirmstatus=1
+                    asp-route-deliverystatus=1>Delivering
+                    Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-route-confirmstatus=1 asp-route-paymentstatus=2
+                    asp-route-deliverystatus=2>Finish Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="ordermanage" asp-action="index" asp-route-confirmstatus=2>Cancel
+                    Order</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<table class="table table-bordered">
+    <thead class="rol">
+        <tr>
+            <th>#</th>
+            <th class="col-1">
+                Order Code
+            </th>
+            <th class="col-1">
+                Created Time
+            </th>
+            <th class="col-2">
+                Delivery Info
+            </th>
+            <th class="col-2">
+                Detail
+            </th>
+            <th class="col-1">
+                Total
+            </th>
+            <th class="col-1">
+                Payment
+            </th>
+            <th class="col-2">
+                Confirm
+            </th>
+            <th class="col-1">
+                Delivery
+            </th>
+            <th class="col-2"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Count() > 0)
+        {
+            int i = 0;
+            foreach (var item in Model)
+            {
+                i = i + 1;
+                <tr>
+                    <td>@i</td>
+                    <td>
+                        @item.order.OrderCode
+                    </td>
+                    <td>
+                        @item.order.OrderDateTime
+                    </td>
+                    <td>
+                        <p>Name: @item.order.CustomerName</p>
+                        <p>Address: @item.order.Address</p>
+                        <p>Phone Number: @item.order.Phone</p>
+
+                    </td>
+                    <td>
+                        @foreach (var orderDetails in item.listOrderDetail)
+                        {
+                            <p>@orderDetails.product.ProductName ($@orderDetails.product.Price) x @orderDetails.Quantity</p>
+                        }
+                    </td>
+                    <td>
+                        $@item.order.SubTotal
+
+                    </td>
+                    <td>
+                        @{
+                            string PaymentMethod = "COD";
+                            string PaymentStatus = "Waiting";
+                            if (@item.order.PaymentMethod == 1)
+                            {
+                                PaymentMethod = "Momo";
+                            }
+                            <p>Type:@PaymentMethod</p>
+
+                            <label>Status:</label>
+                            <select asp-for="@item.order.PaymentStatus" id="@($"paymentstatus-{item.order.OrderId}")"
+                                class="focus--shadow border-1 border">
+                                <option value="0">Pending</option>
+                                <option value="1">Checking</option>
+                                <option value="2">Done</option>
+                            </select>
+                        }
+                    </td>
+                    <td>
+                        <select asp-for="@item.order.ConfirmStatus" id="@($"confirmstatus-{item.order.OrderId}")"
+                            class="focus--shadow border-1 border">
+                            <option value="0">Pending</option>
+                            <option value="1">Done</option>
+                            <option value="2">Cancel</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select asp-for="@item.order.DeliveryStatus" id="@($"deliverystatus-{item.order.OrderId}")"
+                            class="focus--shadow border-1 border">
+                            <option value="0">Pending</option>
+                            <option value="1">Delivering</option>
+                            <option value="2">Done</option>
+                            <option value="3">Cancel</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button class="btn btn-success updateorder" data-orderid="@item.order.OrderId" asp-area="admin"
+                            asp-controller="OrderManage" asp-action="UpdateOrder">Update</button>
+                    </td>
+                </tr>
+            }
+
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $(".updateorder").click(function (event) {
+                event.preventDefault();
+                var orderid = $(this).attr("data-orderid");
+                var paymentstatus = $("#paymentstatus-" + orderid).val();
+                var confirmstatus = $("#confirmstatus-" + orderid).val();
+                var deliverystatus = $("#deliverystatus-" + orderid).val();
+                console.log(deliverystatus);
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("UpdateOrder", "OrderManage", new { Area = "Admin" })",
+                    data: {
+                        orderid: orderid,
+                        paymentstatus: paymentstatus,
+                        confirmstatus: confirmstatus,
+                        deliverystatus: deliverystatus
+                    },
+                    success: function (result) {
+        @* window.location.href = "@Url.Action("Index", "OrderManage", new { Area = "Admin" })"; *@
+                            window.location.href = "@ViewData["Reffer"]";
+                    }
+                });
+            });
+        });
+    </script>
+}

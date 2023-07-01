@@ -1,0 +1,55 @@
+@using System.Data;
+@using Microsoft.EntityFrameworkCore;
+@inject BurgeloContext dbContext
+@{
+    ViewData["Title"] = "Thông tin Db";
+    var connect = dbContext.Database.GetDbConnection();
+    var dbName = connect.Database;
+    var can_Connect = dbContext.Database.CanConnect();
+}
+<partial name="_AlertMessage"></partial>
+<h1 class="text text-primary">Thông tin về cơ sở dữ liệu</h1>
+<ul>
+    <li>Tên cơ sở dữ liệu: @dbName</li>
+    <li>Source: @connect.DataSource</li>
+    <li>State: @connect.State</li>
+</ul>
+<hr>
+<h2>Migrations</h2>
+<h3>Applied Migrations</h3>
+@foreach (var migration in dbContext.Database.GetAppliedMigrations())
+{
+    <p>- @migration (Applied)</p>
+}
+<h3>Pending Migrations</h3>
+@foreach (var migration in dbContext.Database.GetPendingMigrations())
+{
+    <p>- @migration (pending)</p>
+}
+
+@if (!can_Connect)
+{
+    <p class="alert alert-danger">"Không thể kết nối tới Database"</p>
+}
+else
+{
+    <h2>Tables</h2>
+    await dbContext.Database.OpenConnectionAsync();
+    var tables = dbContext.Database.GetDbConnection().GetSchema("Tables");
+    <ul>
+        @foreach (System.Data.DataRow row in tables.Rows)
+        {
+            <li>@row["TABLE_NAME"]</li>
+        }
+    </ul>
+}
+@if (dbContext.Database.GetPendingMigrations().Any())
+{
+    <form method="post">
+        <button type="submit" class="btn btn-success" asp-action="Migrate">Tạo Database (Cập nhật Migration)</button>
+    </form>
+}
+else
+{
+    <a class="btn btn-danger" asp-action="DeleteDb">Xóa Database: @dbName</a>
+}

@@ -1,0 +1,16 @@
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@inject AccountService _accountService;
+<div class="search px-2 border-end text-center">
+@{
+    var loggedAccount = _accountService.GetAccountInfo();
+    if (loggedAccount.AccountId != 0)
+    {
+        <a asp-controller="account" asp-action="userinfo" class="text-decoration-none"><span><i class="fa-light fa-user"></i>&ensp;User</span></a>
+    }
+    else
+    {
+        <a asp-controller="account" asp-action="login" class="text-decoration-none"><span><i class="fa-light fa-user"></i>&ensp;Login</span></a>
+    }
+}
+</div>

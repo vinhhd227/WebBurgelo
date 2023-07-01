@@ -1,0 +1,149 @@
+@model List<OrderViewModel>
+<div class="container-xxl">
+  <h2 class="text-center">Your Order</h2>
+</div>
+<div class="container-xxl">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" asp-controller="order" asp-action="index">Waiting
+            Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" asp-controller="order" asp-action="index" asp-route-confirmstatus=1
+            asp-route-paymentstatus=2 asp-route-deliverystatus=2>Finish
+            Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" asp-controller="order" asp-action="index" asp-route-confirmstatus=2
+            asp-route-deliverystatus=3>Cancel
+            Order</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  @if (Model.Count > 0)
+  {
+    <table class="table table-bordered">
+      <thead class="rol">
+        <tr class="text-center">
+          <th>#</th>
+          <th class="col-1">
+            Order Code
+          </th>
+          <th class="col-2">
+            Delivery Time
+          </th>
+          <th class="col-3">
+            Delivery Info
+          </th>
+          <th class="col-2">
+            Detail
+          </th>
+          <th class="col-1">
+            Total
+          </th>
+          <th class="col-2">
+            Payment
+          </th>
+          <th class="col-1">
+            Status
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        @{
+          int i = 0;
+          foreach (var order in Model)
+          {
+            i = i + 1;
+            <tr>
+              <td class="text--subfont">@i</td>
+              <td class="text--subfont">
+                @order.OrderCode
+              </td>
+              <td class="text--subfont">
+                @order.OrderDateTime.AddMinutes(30).ToString("dddd, dd MMMM yyyy")
+                <br>@order.OrderDateTime.AddMinutes(30).ToString("H:mm") -
+                @order.OrderDateTime.AddMinutes(50).ToString("H:mm")
+              </td>
+              <td class="text--subfont">
+                Name: @order.CustomerName
+                <br>
+                Address: @order.Address
+                <br>
+                Phone: @order.Phone
+              </td>
+              <td class="text--subfont">
+                @foreach (var item in @order.listOrderDetail)
+                {
+                  <p class="text--subfont">@item.product.ProductName x @item.Quantity</p>
+                }
+              </td>
+              <td class="text--subfont">
+                $@order.SubTotal
+              </td>
+              <td class="d-flex justify-content-around">
+                <div class="">
+                  @{
+                    string PaymentMethod = "COD";
+                    string PaymentStatus = "Unpaid";
+                    if (order.PaymentMethod == 1)
+                    {
+                      PaymentMethod = "Momo";
+                    }
+                    <p class="text--subfont">Type: @PaymentMethod</p>
+                    if (order.PaymentStatus == 1)
+                    {
+                      PaymentStatus = "Checking";
+                    }
+                    if (order.PaymentStatus == 2)
+                    {
+                      PaymentStatus = "Paid";
+                    }
+                    <p class="text--subfont">Status: @PaymentStatus</p>
+                  }
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                  @if (order.PaymentMethod == 1 && order.PaymentStatus == 0 && order.ConfirmStatus != 2)
+                  {
+                    <a class="text--subfont text-decoration-none" asp-controller="order" asp-action="paynow" asp-route-orderid="@order.OrderId">Pay now</a>
+                  }
+                </div>
+
+              </td>
+              <td>
+                @if (order.ConfirmStatus == 0)
+                {
+                  <p class="text--subfont">Waiting</p>
+                }
+                else if (order.ConfirmStatus == 1 && order.DeliveryStatus == 0)
+                {
+                  <p class="text--subfont">Confirm</p>
+                }
+                else if (order.ConfirmStatus == 1 && order.DeliveryStatus == 1)
+                {
+                  <p class="text--subfont">Delivering</p>
+                }
+                else if (order.ConfirmStatus == 1 && order.DeliveryStatus == 2)
+                {
+                  <p class="text--subfont">Delivery Success</p>
+                }
+                else if (order.ConfirmStatus == 2 && order.DeliveryStatus == 3)
+                {
+                  <p class="text--subfont">Cancel</p>
+                }
+              </td>
+            </tr>
+          }
+        }
+      </tbody>
+    </table>
+  }
+  else
+  {
+    <p class="alert alert-success text--subfont">You don't have any order. <a asp-controller="cart" asp-action="index"
+        class="text--subfont text-decoration-none">Order Now</a></p>
+  }
+</div>

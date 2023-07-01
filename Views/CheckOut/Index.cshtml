@@ -1,0 +1,80 @@
+@model CheckOutModel
+@{
+    List<CartItem> items = Model.listCartItems;
+}
+<!---->
+<div class="container-xxl" id="check_out_ctn">
+    <h1 class="text-center">Checkout</h1>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <form method="post" asp-controller="checkout" asp-action="placeorder">
+                @* <div class="coupon_ctn">
+                <div>Have a coupon? <a class="showcoupon" href="#">Click here to enter your code</a></div>
+                <p>If you have a coupon code, please apply it below.</p>
+                <input type="text" class="form-control" name="" id="">
+                <button class="btn_coupon">Apply coupon</button>
+                </div> *@
+                <div class="checkout border border-top border-bottom-0 border-start-0 border-end-0 mt-5 pt-3">
+                    <h3>Billing details</h3>
+                    <div class="form-outline mb-4">
+                        <label asp-for="UserName" class="form-label"></label>
+                        <input asp-for="UserName" class="form-control text--subfont">
+                        <span asp-validation-for="UserName" class="text text-danger d-block m-2"></span>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label asp-for="Address" class="form-label"></label>
+                        <input asp-for="Address" class="form-control text--subfont">
+                        <span asp-validation-for="Address" class="text text-danger d-block m-2"></span>
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label asp-for="PhoneNumber" class="form-label"></label>
+                        <input asp-for="PhoneNumber" class="form-control text--subfont">
+                        <span asp-validation-for="PhoneNumber" class="text text-danger d-block m-2"></span>
+                    </div>
+                    @{
+                        decimal subtotal = 0;
+                    }
+                    <h3>Your order</h3>
+                    <div>
+                        <table class="table border">
+                            <tr>
+                                <th>Product</th>
+                                <th>Subtotal</th>
+                            </tr>
+                            @foreach (var item in items)
+                            {
+                                subtotal += item.quantity * item.product.Price;
+                                <tr>
+                                    <td class="product_name">@item.product.ProductName <span>× @item.quantity</span></td>
+                                    <td class="product_subtotal">$@(item.product.Price*item.quantity)</td>
+                                </tr>
+                            }
+                            <tr>
+                                <th>
+                                    <div class="mb-2">Subtotal</div>
+                                    <div>Total</div>
+                                </th>
+                                <td>
+                                    <div class="product_subtotal mb-2">$@subtotal</div>
+                                    <div class="product_total">$@subtotal</div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="mb-3">
+                            <label for="company_name" class="form-label">Payment Method</label>
+                            <select asp-for="PaymentMethod" class="form-control form-control text--subfont">
+                                <option value="0">Cash on delivery (COD)</option>
+                                <option value="1">Momo</option>
+                            </select>
+                        </div>
+                        <button class="btn btn--yellow btn--hover btn-block m-auto btn_place_order" type="submit"><i
+                                class="fa-solid fa-check">&nbsp;</i>PLACE
+                            ORDER</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>

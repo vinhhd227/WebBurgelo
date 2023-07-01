@@ -1,0 +1,82 @@
+@using System.Text;
+@model IEnumerable<ProductModel>
+
+@{
+    ViewData["Title"] = "FOOD";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-area="Admin" asp-controller="ProductManage" asp-action="Create" class="btn btn-primary">ADD NEW</a>
+</p>
+@if (@TempData["message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["message"]
+    </div>
+}
+@* <form method="get">
+<p>
+Title: <input type="text" />
+<input type="submit" value="Filter" />
+</p>
+</form> *@
+<table class="table">
+    <thead class="rol">
+        <tr>
+            <th class="col-1">
+                @Html.DisplayNameFor(model =>model.ProductName)
+            </th>
+            <th class="col-2">
+                @Html.DisplayNameFor(model =>model.category.CategoryName)
+            </th>
+            <th class="col-2">
+                Picture
+            </th>
+            <th class="col-4">
+                @Html.DisplayNameFor(model =>model.Description)
+            </th>
+            <th class="col-1">
+                @Html.DisplayNameFor(model =>model.Price)
+            </th>
+            <th class="col-2"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.category.CategoryName)
+                </td>
+                <td>
+                    @{
+                        StringBuilder sb = new StringBuilder();
+                        sb.Append(@item.ProductName.ToLower().Replace(" ", "_")).Append(".png");
+                        string imgName = sb.ToString();
+                    }
+                    <img src="~/content/images/menu/@item.category.CategoryName.ToLower()/@imgName" class="img-thumbnail" alt="ảnh"
+                        width="200" height="200">
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    <a asp-area="Admin" asp-controller="ProDuctManage" asp-action="Read" asp-route-id="@item.ProductId">Xem</a>
+                    |
+                    <a asp-area="Admin" asp-controller="ProDuctManage" asp-action="Update"
+                        asp-route-id="@item.ProductId">Sửa</a> |
+                    <a asp-area="Admin" asp-controller="ProDuctManage" asp-action="Delete"
+                        asp-route-id="@item.ProductId">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

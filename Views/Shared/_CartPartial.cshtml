@@ -1,0 +1,86 @@
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@inject CartService _cartService;
+
+
+@{
+    var cart = _cartService.GetCartItems();
+    if (cart.Count() > 0)
+    {
+        decimal total = 0;
+        <li class="d-block drop_down">
+            <div class="cart px-2">
+                <a asp-controller="cart" asp-action="index" class="text-decoration-none">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div>
+                            <span><i class="fa-light fa-bag-shopping"></i>&ensp;Cart
+                                &ensp;</span>
+                        </div>
+                        <div>
+                            <span class="cart_count d-inline-block text-center">@cart.Count</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="dropdown_content position-absolute p-4" id="cart_dropdown">
+                @foreach (var cartitem in cart)
+                {
+                    var subtotal = cartitem.quantity * cartitem.product.Price;
+                    total += subtotal;
+                    <div class="d-flex border-bottom align-items-center mt-2">
+                        <div>
+                            @{
+                                StringBuilder sb = new StringBuilder();
+                                sb.Append(@cartitem.product.ProductName.ToLower().Replace(" ", "_")).Append(".png");
+                                string imgName = sb.ToString();
+                            }
+                            <img src="~/content/images/menu/@cartitem.product.category.CategoryName.ToLower()/@imgName"
+                                class="card-img-top" alt="...">
+                        </div>
+                        <div>
+                            <a class="food_link" asp-controller="product" asp-action="index"
+                                asp-route-productid="@cartitem.product.ProductId">@cartitem.product.ProductName</a>
+                            <div class="d-flex price_block">
+                                <div class="number">@cartitem.quantity</div>
+                                &nbsp;&#215;&nbsp;
+                                <div class="price">@cartitem.product.Price</div>
+                                <div class="currency">$</div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                <div class="d-flex final_price_block text-center d-flex justify-content-around border-bottom border-1 py-3">
+                    Subtotal:
+                    <div class="price_block d-flex">
+                        <div class="currency">$</div>
+                        <div class="price">@total</div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column pt-3 btn_ctn">
+                    <a class="rounded-pill btn__a btn--yellow btn--hover mb-2" asp-controller="checkout"
+                        asp-action="index"><span> <i class="fa-solid fa-cart-shopping"></i>&nbsp;Check out</span></a>
+                    <a asp-controller="cart" asp-action="index" class="rounded-pill btn__a btn--dark btn--hover mb-2"><span><i
+                                class="fa-regular fa-eye"></i>&nbsp;View cart</span></a>
+                </div>
+            </div>
+        </li>
+    }
+    else
+    {
+         <li class="d-block drop_down">
+            <div class="cart px-2">
+                <a asp-controller="cart" asp-action="index" class="text-decoration-none">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <div>
+                            <span><i class="fa-light fa-bag-shopping"></i>&ensp;Cart
+                                &ensp;</span>
+                        </div>
+                        <div>
+                            <span class="cart_count d-inline-block text-center">@cart.Count</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </li>
+    }
+}

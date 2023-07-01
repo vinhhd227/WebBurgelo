@@ -1,0 +1,54 @@
+@model ProductModel
+@{
+    ViewData["Title"] = "Xóa món ăn";
+    @* var modelData = ViewData["modelData"] as MVC.Models.ProductModel; *@
+}
+<h1>@ViewData["Title"]</h1>
+<h3>Bạn có chắc chắn muốn xóa</h3>
+<div>
+    <h4>Món ăn</h4>
+    <hr>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class="col-sm-2">
+            Ảnh
+        </dt>
+        <dd class="col-sm-10">
+            @{
+                StringBuilder sb = new StringBuilder();
+                sb.Append(@Model.ProductName.ToLower().Replace(" ", "_")).Append(".png");
+                string imgName = sb.ToString();
+            }
+            <img src="~/content/images/menu/@Model.category.CategoryName.ToLower()/@imgName" class="img-thumbnail" alt="ảnh"
+                width="200" height="200">
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.category.CategoryName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.category.CategoryName)
+        </dd>
+    </dl>
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <hr>
+        <a asp-action="index" class="btn btn-primary">Quay lại</a>
+    </form>
+</div> 

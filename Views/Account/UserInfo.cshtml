@@ -1,0 +1,129 @@
+@model AccountModel
+
+@if (Model != null)
+{
+    <div class="container-xxl m-auto" id="userinfo_ctn">
+        <div class="row row-cols-1 row-cols-lg-2">
+            <div
+                class="col col-lg-4 bg--yellow text-center text-white d-flex align-items-center justify-content-center flex-column py-5 ">
+                <img src="~/content/images/user/avatar.jpg" alt="Avatar" class="my-5 rounded-circle"
+                    style="width: 200px;" />
+                <h5 class="text--subfont">@Model.user.UserName</h5>
+                @if(@Model.user.role is not null)
+                {
+                    <p>@Model.user.role.RoleName</p>
+                }
+                @{
+                    switch (Model.user.RoleId)
+                    {
+                        case 1:
+                            {
+                                <a asp-controller="account" asp-action="VerifyEmailSendMail" class="btn btn--dark btn--hoverlight btn-block ms-2">Verify Email</a>
+                                break;
+                            }
+                        case 2:
+                            {
+                                break;
+                            }
+                        case 3:
+                            {
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <a a asp-area="admin" asp-controller="adminmanage" asp-action="index"
+                                        class="btn btn--dark btn--hoverlight btn-block m-auto"><span>Manager &nbsp <i class="fa-regular fa-folder-gear"></i>    </span></a>
+                                </div>
+                                break;
+                            }
+                        case 4:
+                            {
+                                <div class="col-12 col-sm-6 mb-3">
+                                    <a a asp-area="admin" asp-controller="adminmanage" asp-action="index"
+                                        class="btn btn--dark btn--hoverlight btn-block m-auto"><span>Admin &nbsp <i class="fa-regular fa-folder-gear"></i>    </span></a>
+                                </div>
+                                break;
+                            }
+                        default:
+                            {
+                                break;
+                            }
+                    }
+
+                }
+            </div>
+            <div class="col col-lg-8">
+                <div class="card-body p-4">
+                    @if (@TempData["message"] != null)
+            {
+                <div class="alert alert-warning">
+                    @TempData["message"]
+                </div>
+            }
+                    <h5>Information &nbsp &nbsp<a asp-controller="account" asp-action="changeuserinfo" ><i class="far fa-edit"></i></a></h5>
+                    <hr class="mt-0 mb-4">
+                    <div class="row pt-1">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <h6>Name</h6>
+                            <p class="text-muted text--subfont">@Model.user.UserName</p>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-3">
+                            <h6>Gender</h6>
+                            <p class="text-muted text--subfont">@Model.user.Gender</p>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-3">
+                            <h6>Date of Birth</h6>
+                            <p class="text-muted text--subfont">@Model.user.DateOfBirth.ToString("dd/MM/yyyy")</p>
+                        </div>
+                    </div>
+                    <h5>Account Info</h5>
+                    <hr class="mt-0 mb-4">
+                    <div class="row pt-1">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <h6>User Name</h6>
+                            <p class="text-muted text--subfont">@Model.AccountName</p>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-3">
+                            <h6>Password &nbsp &nbsp<a asp-controller="account" asp-action="changepassword"><i class="far fa-edit"></i></a></h6>
+                            <p class="text-muted text--subfont">******</p>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-3">
+                            <h6>Email &nbsp &nbsp<a asp-controller="account" asp-action="changeemail"><i class="far fa-edit"></i></a></h6>
+                            <p class="text-muted text--subfont">@Model.user.Email</p>
+                        </div>
+                        @* <div class="col-12 col-sm-6 mb-3">
+                            <h6>Roles</h6>
+                            <p class="text-muted">@Model.user.role.RoleName</p>
+                        </div> *@
+                    </div>
+                    <h5>Delivery Ifnomation &nbsp &nbsp<a asp-controller="account" asp-action="changedeliveryinfo"><i class="far fa-edit"></i></a></h5>
+                    <hr class="mt-0 mb-4">
+                    <div class="row pt-1">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <h6>Address</h6>
+                            <p class="text-muted text--subfont">@Model.user.Address</p>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-3">
+                            <h6>Phone</h6>
+                            <p class="text-muted text--subfont">@Model.user.PhoneNumber</p>
+                        </div>
+                    </div>
+                    <hr class="mt-0 mb-4">
+                    <div class="row pt-1">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <a asp-controller="account" asp-action="logout"
+                                class="btn btn--yellow btn-block m-auto"><span>Logout &nbsp <i
+                                        class="fa-regular fa-arrow-right-from-bracket"></i></span></a>
+                        </div>
+                    </div>
+                    @* <div class="d-flex justify-content-start">
+                <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
+                <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
+                <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
+                </div> *@
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p class="alert alert-danger">Something Wrong</p>
+}

@@ -1,0 +1,26 @@
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@inject OrderService _orderService;
+@{
+    var orders = _orderService.GetOrderItems();
+    if (orders.Count() > 0)
+    {
+        <div class="cart px-2 border-end">
+            <a asp-controller="order" asp-action="index" class="text-decoration-none">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div>
+                        <span><i class="fa-light fa-list-radio"></i>&ensp;Order
+                            &ensp;</span>
+                    </div>
+                    <div>
+                        <span class="cart_count d-inline-block text-center">@orders.Count</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    }
+    else
+    {
+
+    }
+}

@@ -1,0 +1,50 @@
+@model UserModel
+@{
+
+}
+<div class="container-xxl m-auto row row-cols-1 row-cols-lg-2">
+    <div class="col">
+        <img src="~/content/images/user/changeuserinfo.jpg" class="img-fluid" alt="">
+    </div>
+    <div class="col m-auto p-5">
+        <img src="~/content/images/layout/logo-burgelo.svg" alt="">
+        <h5 class="fw-normal my-3 pb-3" style="letter-spacing: 1px;">Edit User Info</h5>
+        <form asp-controller="account" asp-action="ChangeUserInfoConfirm" method="post">
+            @if (@TempData["message"] != null)
+            {
+                <div class="alert alert-danger">
+                    @TempData["message"]
+                </div>
+            }
+            <div class="form-outline d-none mb-4">
+                <label asp-for="UserId" class="form-label"></label>
+                <input asp-for="UserId" class="form-control text--subfont" readonly>
+                <span asp-validation-for="UserId" class="text text-danger d-block m-2"></span>
+            </div>
+            <div class="form-outline mb-4">
+                <label asp-for="UserName" class="form-label"></label>
+                <input asp-for="UserName" class="form-control text--subfont" required>
+                <span asp-validation-for="UserName" class="text text-danger d-block m-2"></span>
+            </div>
+            <div class="form-outline mb-4">
+                <label asp-for="Gender" class="form-label"></label>
+                <select asp-for="Gender" class="form-control text--subfont">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                @* <input asp-for="Gender" class="form-control text--subfont" > *@
+                <span asp-validation-for="Gender" class="text text-danger d-block m-2"></span>
+            </div>
+            <div class="form-outline mb-4">
+                <label asp-for="DateOfBirth" class="form-label"></label>
+                <input asp-for="DateOfBirth" type="date" class="form-control text--subfont" required>
+                <span asp-validation-for="DateOfBirth" class="text text-danger d-block m-2"></span>
+            </div>
+            <div class="container d-flex justify-content-center">
+                <button type="submit" class="btn btn--yellow btn-block me-2">Confirm</button>
+                <a asp-controller="account" asp-action="userinfo"
+                    class="btn btn--dark btn--hover btn-block ms-2">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

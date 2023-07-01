@@ -1,0 +1,40 @@
+@model OrderViewModel
+<div class="container-xxl">
+    <div class="row">
+        <div class="col"><img src="~/content/images/checkout/momo_qr.png" alt=""></div>
+        <div class="col p-5">
+            <h2>Order Infomation</h2>
+            <p>Order Code: @Model.OrderCode</p>
+            <table class="table border">
+                <tr>
+                    <th>Product</th>
+                    <th>Subtotal</th>
+                </tr>
+                @{
+                        decimal subtotal = 0;
+                }
+                @foreach (var item in Model.listOrderDetail)
+                {
+                    subtotal += item.Quantity * item.product.Price;
+                    <tr>
+                        <td class="product_name">@item.product.ProductName <span>× @item.Quantity</span></td>
+                        <td class="product_subtotal">$@(item.product.Price * item.Quantity)</td>
+                    </tr>
+                }
+                <tr>
+                    <th>
+                        <div class="mb-2">Subtotal</div>
+                        <div>Total</div>
+                    </th>
+                    <td>
+                        <div class="product_subtotal mb-2">$@subtotal</div>
+                        <div class="product_total">$@subtotal</div>
+                    </td>
+                </tr>
+            </table>
+            <p>Scan this QR to pay</p>
+            <p>Nội dung: @Model.OrderCode</p>
+            <a asp-controller="order" asp-action="paycheck" asp-route-orderid="@Model.OrderId">Done</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,240 @@
+/*xxl*/
+@media screen and (max-width: 1399px) {
+
+    /*All*/
+    /*Navigation*/
+    /*Home dropdown*/
+    .special_offer__title .title--small {
+        font-size: 27px;
+        letter-spacing: 5.4px;
+    }
+
+    .special_offer__title .title--big {
+        font-size: 48px;
+    }
+
+    .special_offer--bgdark .title--small {
+        letter-spacing: 9.5px;
+    }
+
+    .special_offer--bgdark .title--big {
+        letter-spacing: 2.5px;
+    }
+
+    .special_offer--bgyellow .special_offer__title::after {
+        background: none;
+        width: 0%;
+    }
+}
+
+/*xl*/
+@media screen and (max-width: 1199px) {
+
+    /*All*/
+    /*Navigation*/
+    /*Home dropdown*/
+    .special_offer__title .title--small {
+        font-size: 27px;
+        letter-spacing: 5.4px;
+    }
+
+    .special_offer__title .title--big {
+        font-size: 48px;
+    }
+
+    .special_offer--bgdark .title--small {
+        letter-spacing: 12px;
+    }
+
+    .special_offer--bgdark .title--big {
+        letter-spacing: 5px;
+    }
+
+    .special_offer--bgyellow .special_offer__title::after {
+        background-size: 180px;
+        top: 0%;
+        left: 60%;
+    }
+
+    .special_offer--bgyellow .special_offer__title::after {
+        background: url(/content/images/coffe.png) no-repeat;
+        width: 30%;
+    }
+
+    #delivery_ctn h3 {
+        font-size: 26px;
+    }
+
+    #delivery_ctn>img {
+        display: none;
+    }
+
+    /*bbq_burger*/
+    #product_info_ctn .right .eve_items h2 {
+        font-size: 16px;
+    }
+
+    /*burger.html*/
+}
+/*lg*/
+@media screen and (max-width: 991px) {
+
+    /*All*/
+    /*Navigation*/
+    /*Home dropdown*/
+    .special_offer--bgyellow .special_offer__title::after {
+        background-size: 130px;
+        top: 0%;
+        left: 45%;
+        width: 20%;
+    }
+
+    /*Header*/
+    #header_ctn .phone_number span:last-child,
+    #header_ctn .address span:last-child {
+        font-size: 12px;
+    }
+
+    /*Dropdown*/
+    #home_dropdown .special_offer {
+        width: 100%;
+        margin: auto;
+    }
+
+    /*Promotion*/
+    
+
+    
+
+    /*bbq_burger*/
+    #product_info_ctn .big_img {
+        max-width: 490px;
+        margin-right: 20px;
+    }
+
+    #product_info_ctn .right .eve_items h2 {
+        font-size: 20px;
+    }
+
+    #product_info_ctn .left {
+        width: 60%;
+    }
+
+    #product_info_ctn .right {
+        width: 40%;
+    }
+
+    /*burger.html*/
+}
+
+/*md*/
+@media screen and (max-width: 767px) {
+
+    /*All*/
+    /*Navigation*/
+    /*Home dropdown*/
+    .special_offer {
+        padding: 10px 0px 13px 20px;
+    }
+
+    .special_offer__title .title--small {
+        font-size: 27px;
+        letter-spacing: 5.4px;
+    }
+
+    .special_offer__title .title--big {
+        font-size: 48px;
+    }
+
+    .special_offer--bgdark .title--small {
+        letter-spacing: 8px;
+    }
+
+    .special_offer--bgdark .title--big {
+        letter-spacing: 3px;
+    }
+
+    .special_offer--bgyellow .special_offer__title::after {
+        background: none;
+        width: 0%;
+    }
+
+    /*bbq_burger*/
+    #product_info_ctn .left {
+        width: 100%;
+        border: none !important;
+    }
+
+    #product_info_ctn .right {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #product_info_ctn .right .eve_items h2 {
+        font-size: 28px;
+    }
+
+    #product_info_ctn .big_img {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    #burgers_ctn .left .food_ctn img {
+        max-width: 500px;
+    }
+}
+
+/*sm*/
+@media screen and (max-width: 575px) {
+
+    /*All*/
+    /*Navigation*/
+    /*Home dropdown*/
+    .special_offer .special_offer__title {
+        line-height: 3em;
+    }
+
+    .special_offer__title .title--small {
+        font-size: 16px;
+        letter-spacing: 10px;
+    }
+
+    .special_offer__title .title--big {
+        font-size: 34px;
+        letter-spacing: 4px;
+    }
+
+    .special_offer--bgdark .title--small {
+        letter-spacing: 15px;
+    }
+
+    .special_offer--bgdark .title--big {
+        letter-spacing: 10px;
+    }
+
+    .special_offer--bgyellow .special_offer__title::after {
+        width: 40%;
+        background-size: 150px;
+        top: 0%;
+        left: 60%;
+        background: url(/content/images/coffe.png) no-repeat;
+    }
+    /*Banner*/
+    #banner_ctn{
+        padding-left: 60px;
+    }
+    #banner_ctn h1{
+        letter-spacing: 8px;
+        font-size: 50px;
+    }
+    /*Promotion*/
+    #promotion_ctn .promotion__main{
+        font-size: 12px;
+    }
+    #promotion_ctn .promotion__main h3{
+        font-size: 62px;
+    }
+    #promotion_ctn .promotion__main h3 span{
+         font-size: 30px;   
+    }
+}

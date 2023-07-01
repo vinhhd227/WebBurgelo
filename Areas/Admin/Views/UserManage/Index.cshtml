@@ -1,0 +1,71 @@
+@model List<UserModel>
+@{
+    ViewData["Title"] = "User";
+    int i = 0;
+}
+<h1>@ViewData["Title"]</h1>
+@if (@TempData["message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["message"]
+    </div>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            i++;
+            string phone = user.PhoneNumber;
+            if (phone != "")
+            {
+                phone = "*******" + phone.Substring(phone.Length - 3, 3);
+            }
+            <tr>
+                <th scope="row">@i</th>
+                <td>@user.UserName</td>
+                <td>@phone </td>
+                <td>
+                    <select asp-for="@user.RoleId" id="@($"role-{user.UserId}")" class="focus--shadow border-1 border">
+                        <option value="1">Unverify</option>
+                        <option value="2">Customer</option>
+                        <option value="3">Manager</option>
+                        <option value="4">Admin</option>
+                    </select>
+                    <button class="btn btn-success updateorder" data-userid="@user.UserId" asp-area="admin"
+                        asp-controller="UserManage" asp-action="UpdateUser">Update</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $(".updateorder").click(function (event) {
+                event.preventDefault();
+                var userId = $(this).attr("data-userid");
+                var roleId = $("#role-" + userId).val();
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("UpdateUser", "UserManage", new { Area = "Admin" })",
+                    data: {
+                        userId: userId,
+                        roleId: roleId,
+                    },
+                    success: function (result) {
+        @* window.location.href = "@Url.Action("Index", "OrderManage", new { Area = "Admin" })"; *@
+                            window.location.href = "@ViewData["Reffer"]";
+                    }
+                });
+            });
+        });
+    </script>
+}

@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebBurgelo</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/reponsive.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="~/MVC.styles.css" asp-append-version="true" /> *@
+    <!--Font-->
+    <link rel="stylesheet" href="https://use.typekit.net/pfh4qwx.css">
+    <!--Slick-->
+    <link rel="stylesheet" type="text/css" href="~/lib/slick/slick.css" asp-append-version="true" />
+    <link rel="stylesheet" type="text/css" href="~/lib/slick/slick-theme.css" asp-append-version="true" />
+</head>
+
+<body class="position-relative px-1 px-sm-2 px-md-3 px-lg-4 px-xl-5 px-xxl-0">
+    <!--Header-->
+    <header>
+        <div class="container-xxl m-auto row" id="header_ctn">
+            <div class="col-md-4 text-center d-block d-md-none">
+                <a asp-controller="Home" asp-action="Index"><img src="~/content/images/layout/logo-burgelo.svg"
+                        alt="Logo"></a>
+            </div>
+            <div
+                class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start phone_number">
+                <a class="text-decoration-none" href="tel:+1 (800) 312-2121">
+                    <span class="icon--yellow"><i class="fa-duotone fa-phone"></i></span>
+                    <span class="ps-3">+1 (800) 312-2121</span>
+                </a>
+            </div>
+            <div class="col-md-4 text-center d-none d-md-block">
+                <a asp-controller="Home" asp-action="Index"><img src="~/content/images/layout/logo-burgelo.svg"
+                        alt="Logo"></a>
+            </div>
+            <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-end address">
+                <span class="icon--yellow"><i class="fa-duotone fa-location-dot"></i></span>
+                <span class="ps-3">172 14th Street, Office 503, NY</span>
+            </div>
+        </div>
+        <!--Navigation-->
+        <div class="container-xxl m-auto row sticky-lg-top p-0 mb-xxl-0 mb-2" id="nav_ctn">
+            <div class="col-xxl-3">
+            </div>
+            <nav class="navbar navbar-expand col-xxl-6" id="navbar">
+                <ul class="navbar-nav d-flex justify-content-md-center justify-content-end gap-2 gap-sm-4 w-100">
+                    <li class="nav-item drop_down">
+                        <a class="nav-link" asp-controller="home" asp-action="index">
+                            <span>Home&nbsp;<i class="fa-regular fa-chevron-down"></i></span>
+                        </a>
+                        <!--Home dropdown-->
+                        <div class="dropdown_content position-absolute p-4" id="home_dropdown">
+                            <!--Menu-->
+                            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+                                <div class="col">
+                                    <a asp-controller="menu" asp-action="index" asp-route-categoryName="burgers"
+                                        class="menu__a"><img class="menu__a__img m-auto m-md-0"
+                                            src="~/content/images/layout/navigation/menu/burger.png" alt="Burgers"></a>
+                                </div>
+                                <div class="col">
+                                    <a asp-controller="menu" asp-action="index" asp-route-categoryName="pizza"
+                                        class="menu__a"><img class="menu__a__img m-auto m-md-0"
+                                            src="~/content/images/layout/navigation/menu/pizza.png" alt="Pizza"></a>
+                                </div>
+                                <div class="col">
+                                    <a asp-controller="menu" asp-action="index" asp-route-categoryName="drinks"
+                                        class="menu__a"><img class="menu__a__img m-auto m-md-0"
+                                            src="~/content/images/layout/navigation/menu/drinks.png" alt="Drinks"></a>
+                                </div>
+                                <div class="col">
+                                    <a asp-controller="menu" asp-action="index" asp-route-categoryName="pasta"
+                                        class="menu__a"><img class="menu__a__img m-auto m-md-0"
+                                            src="~/content/images/layout/navigation/menu/pasta.png" alt="Pasta"></a>
+                                </div>
+                                <div class="col">
+                                    <a asp-controller="menu" asp-action="index" asp-route-categoryName="soup"
+                                        class="menu__a"><img class="menu__a__img m-auto m-md-0"
+                                            src="~/content/images/layout/navigation/menu/soup.png" alt="Soup"></a>
+                                </div>
+                                <div class="col">
+                                    <a asp-controller="menu" asp-action="index" asp-route-categoryName="sushi"
+                                        class="menu__a"><img class="menu__a__img m-auto m-md-0"
+                                            src="~/content/images/layout/navigation/menu/sushi.png" alt="Sushi"></a>
+                                </div>
+                            </div>
+                            <!--Special_offer-->
+                            <div class="row m-auto gap-4 g-4 mt-4 mt-lg-0">
+                                <!--Yellow-->
+                                <div class="col-lg p-0">
+                                    <div
+                                        class="d-flex flex-column justify-content-between flex-sm-row align-items-sm-center flex-lg-column align-items-lg-start flex-xl-row align-items-xl-center special_offer special_offer--bgyellow position-relative">
+                                        <div class="d-flex flex-column justify-content-between special_offer__title">
+                                            <span class="title--small">SPECIAL OFFER</span>
+                                            <span class="title--big">BUY 2 GET 3</span>
+                                        </div>
+                                        <div class="btn_ctn">
+                                            <a class="rounded-pill btn__a btn--dark btn--hoverlight"
+                                                asp-controller="menu" asp-action="index" asp-route-id="">
+                                                <span>ORDER NOW</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Dark-->
+                                <div class="col-lg p-0">
+                                    <div
+                                        class="d-flex flex-column justify-content-between flex-sm-row align-items-sm-center flex-lg-column align-items-lg-start flex-xl-row align-items-xl-center special_offer special_offer--bgdark">
+                                        <div class="d-flex flex-column justify-content-between special_offer__title">
+                                            <span class="title--big">Get 25% OFF</span>
+                                            <span class="title--small">ON YOUR ODER</span>
+                                        </div>
+                                        <div class="btn_ctn">
+                                            <a class="rounded-pill btn__a btn--yellow btn--hoverlight"
+                                                asp-controller="menu" asp-action="index" asp-route-id="">
+                                                <span>ORDER NOW</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="home" asp-action="index"
+                            asp-fragment="about_ctn"><span>About</span></a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="home" asp-action="index"
+                            asp-fragment="food_ctn"><span>Food</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="home" asp-action="index"
+                            asp-fragment="delivery_ctn"><span>Delivery</span></a></li>
+                    <li class="nav-item"><a class="nav-link" asp-controller="home" asp-action="index"
+                            asp-fragment="contact_ctn"><span>Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="d-flex align-items-center justify-content-between justify-content-xxl-center col-xxl-3">
+                <div class="d-flex align-items-center justify-content-center ps-lg-4 ps-md-3 search_cart">
+                    <partial name="_UserPartial"></partial>
+                    <partial name="_OrderPartial"></partial>
+                </div>
+                <div class="d-flex align-items-center search_cart">
+                    <partial name="_SearchPartial"></partial>
+                    <partial name="_CartPartial"></partial>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!--Contact-->
+    <div class="container-xxl m-auto mt-5 py-5 row" id="contact_ctn">
+        <div class="col-xl-8 d-md-flex row py-2">
+            <!---->
+            <div class="col-md my-md-0 my-2">
+                <h3>SIGN UP FOR OUR UPDATE</h3>
+                <div class="mt-2 d-flex flex-column justify-content-between">
+                    <p>To stay up-to-date on our promotions,
+                        discounts, sales, special offers and more.</p>
+                    <div class="position-relative" id="sub">
+                        <form method="post" asp-controller="home" asp-action="subscribe">
+                            <input class="rounded-pill border-1 border px-4 py-3" type="email" name="email" id="email"
+                                placeholder="Enter your email" required>
+                            <button type="submit" class="position-absolute top-50 translate-middle-y border-0"><i
+                                    class="fa-regular fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                    <div class="link_social ms-lg-2 mt-5">
+                        <a class="px-2" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="px-2" href=""><i class="fa-brands fa-pinterest"></i></a>
+                        <a class="px-2" href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="col-md my-md-0 my-2" id="contact_us_ctn">
+                <h3>CONTACT US</h3>
+                <div class="d-flex flex-column justify-content-between align-items-start px-4">
+                    <div class="address mt-2 d-flex align-items-center">
+                        <span class="icon--yellow"><i class="fa-light fa-location-dot"></i></span>
+                        <span class="ps-4">172 14th Street, Office 503, NY</span>
+                    </div>
+                    <div class="phone_number mt-2">
+                        <a class="text-decoration-none d-flex align-items-center" href="tel:+1 (800) 312-2121">
+                            <span class="icon--yellow"><i class="fa-light fa-phone"></i></span>
+                            <span class="ps-3">+1 (800) 312-2121</span>
+                        </a>
+                    </div>
+                    <div class="opening_time mt-2 d-flex align-items-center">
+                        <span class="icon--yellow"><i class="fa-light fa-clock"></i></span>
+                        <span class="d-inline-block ps-3"> Monday-Friday: 9:00 am - 6:00 pm <br>
+                            Saturday: 9:00 am - 4:00 pm</span>
+                    </div>
+                    <div class="send_email mt-2">
+                        <a class="text-decoration-none d-flex align-items-center" href="mailto:someone@example.com">
+                            <span class="icon--yellow"><i class="fa-light fa-envelope"></i></span>
+                            <span class="ps-3">Send us an email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="col-xl-4 my-md-0 my-2 py-2">
+            <h3>INSTAGRAM</h3>
+            <div class="row row-cols-4 g-4">
+                <div class="col img_ctn"><img src="~/content/images/layout/contact/banana-juice_01-400x400.png" alt="">
+                </div>
+                <div class="col img_ctn"><img src="~/content/images/layout/contact/Depositphotos_41260055_el0-1.png"
+                        alt=""></div>
+                <div class="col img_ctn"><img src="~/content/images/layout/contact/pasta2_01.png" alt=""></div>
+                <div class="col img_ctn"><img src="~/content/images/layout/contact/pizza3_02.png" alt=""></div>
+                <div class="col img_ctn"><img src="~/content/images/layout/contact/sushi1_01.png" alt=""></div>
+                <div class="col img_ctn"><img src="~/content/images/layout/contact/Turkey-Burgers_01.png" alt=""></div>
+                <div class="col img_ctn"><img src="~/content/images/layout/contact/sushi1_01.png" alt=""></div>
+                <div class="col img_ctn"><img src="~/content/images/layout/contact/Turkey-Burgers_01.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <!--Map-->
+    <div class="container-xxl" id="map_ctn">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d639.7021692218351!2d105.84744995282247!3d21.003138210516063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac742d3b83df%3A0x28772da31fb145b1!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIG5naOG7gSBCw6FjaCBLaG9hIEjDoCBO4buZaQ!5e0!3m2!1svi!2s!4v1686998920741!5m2!1svi!2s"
+            width="1920" height="900" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="container-xxl my-3" id="footer_ctn">
+            <a href="#">Vestow</a> ©. All rights reserved.
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="~/lib/slick/slick.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

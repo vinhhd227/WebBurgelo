@@ -1,0 +1,98 @@
+@model List<CartItem>
+
+<!--Cart-->
+@if (Model.Count > 0)
+{
+  decimal total = 0;
+  <div class="container-xxl  mt-3 pb-5 align-items-center pe-1" id="cart_ctn">
+    <h2 class="text-center">Cart</h2>
+    <div class="d-flex w-100 flex-column flex-lg-row">
+      <div class="left">
+        <table class="table">
+          <tr>
+            <th></th>
+            <th></th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th></th>
+          </tr>
+          @foreach (var cartitem in Model)
+          {
+            var thanhtien = cartitem.quantity * cartitem.product.Price;
+            total += thanhtien;
+            <tr>
+              <td><a asp-controller="cart" asp-action="removecart" asp-route-productid="@cartitem.product.ProductId"
+                  style="font-size: 20px; font-weight: bold;">&nbsp;&#215;&nbsp;</a></td>
+              <td>@{
+                  StringBuilder sb = new StringBuilder();
+                  sb.Append(@cartitem.product.ProductName.ToLower().Replace(" ", "_")).Append(".png");
+                  string imgName = sb.ToString();
+                }
+                <img src="~/content/images/menu/@cartitem.product.category.CategoryName.ToLower()/@imgName" class="card-img-top"
+                  alt="...">
+              </td>
+              <td><a asp-controller="product" asp-action="index" asp-route-productid="@cartitem.product.ProductId">@cartitem.product.ProductName</a></td>
+              <td>$@(cartitem.product.Price.ToString("n0"))</td>
+              <td><input asp-for="@cartitem.quantity" id="@($"quantity-{cartitem.product.ProductId}")" min=1 class="focus--shadow rounded-pill border-1 border" /></td>
+              <td>@(thanhtien.ToString("n0"))</td>
+              <td>
+                <button class="btn btn-success updatecartitem" data-productid="@cartitem.product.ProductId"
+                  asp-controller="cart" asp-action="UpdateCart">Update</button>
+              </td>
+            </tr>
+          }
+          <tr>
+            <td class="actions p-3" colspan="7"><label for="">Coupon:</label><input class="ms-1" type="text" name=""
+                id="coupon_code" placeholder="Coupon code"><button class="ms-1">Apply Coupon</button></td>
+          </tr>
+        </table>
+      </div>
+      <div class="right border-1 border d-flex flex-column">
+        <h2 class="my-3">CART TOTALS</h2>
+        <table>
+          <tr>
+            <th>Subtotal</th>
+            <td>$@(total.ToString("n0"))</td>
+          </tr>
+          <tr>
+            <th>Total</th>
+            <td class="total_price">$@(total.ToString("n0"))</td>
+          </tr>
+        </table>
+        <a class="p-3" asp-controller="checkout" asp-action="index"><i class="fa-solid fa-check">&nbsp;</i>PROCEED TO CHECKOUT</a>
+      </div>
+    </div>
+  </div>
+  @section Scripts {
+  <script>
+    $(document).ready(function () {
+      $(".updatecartitem").click(function (event) {
+        event.preventDefault();
+        var productid = $(this).attr("data-productid");
+        var quantity = $("#quantity-" + productid).val();
+        $.ajax({
+          type: "POST",
+          url: "@Url.RouteUrl(new { controller = "cart", action = "UpdateCart"})",
+          data: {
+            productid: productid,
+            quantity: quantity
+          },
+          success: function (result) {
+            window.location.href = "@Url.RouteUrl("cart")";
+          }
+        });
+      });
+    });
+  </script>
+}
+}
+else
+{
+  <div class="container-xxl  mt-3 align-items-center pe-1" id="cart_ctn">
+    <h2 class="text-center">Cart</h2>
+    <p class="alert alert-danger text--subfont mt-5">Cart empty. Get some food <a asp-controller="menu" asp-action="index"
+        class="text-decoration-none text--subfont">here</a></p>
+  </div>
+}

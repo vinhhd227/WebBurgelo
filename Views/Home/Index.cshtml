@@ -1,0 +1,312 @@
+﻿@model HomeModel;
+@{
+    ViewData["Title"] = "Home Page";
+    List<CategoryModel> categories = Model.categories;
+    List<ProductModel> products = Model.products;
+}
+<!--Banner-->
+<div class="container-xxl my-2 mt-2 mt-xxl-0" id="banner_ctn">
+    <div class="container position-relative">
+        <img class="position-relative" src="~/content/images/home/banner/food.svg" alt="">
+        <h1>DELIVERY</h1>
+        <p>We’re proud to have our burger’s history
+            being as long as 25 years!</p>
+        <div class="btn_ctn">
+            <a class="rounded-pill btn__a btn--yellow btn--hoverlight" asp-controller="menu" asp-action="index">
+                <span>ORDER NOW</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--About-->
+<div class="container-xxl row m-auto my-2 py-5" id="about_ctn">
+    <div class="col-md-6 d-flex align-items-center img_ctn">
+        <img src="~/content/images/home/about/About.png" alt="">
+    </div>
+    <div class="mt-5 d-flex flex-column justify-content-around col-md-6 ps-5">
+        <h2>BEST PRISE ALWAYS</h2>
+        <div>
+            <i class="fa-solid fa-star-sharp"></i>
+            <i class="fa-solid fa-star-sharp mx-3"></i>
+            <i class="fa-solid fa-star-sharp"></i>
+        </div>
+        <p>The perfect place to enjoy the life & delicious food with your
+            friends! Our family has been in the restaurant business for a very
+            long time. Nowadays we can proudly boast our reputation for a
+            well known restaurant in our area. We are famous for the fabulous
+            authentic cuisine, professional chef and dedicated staff….</p>
+        <div class="row">
+            <div class="col text-center">
+                <img src="~/content/images/home/about/icon/fav1.svg" alt="">
+                <h3 class="py-2">GOOD FOOD</h3>
+            </div>
+            <div class="col text-center">
+                <img src="~/content/images/home/about/icon/fav2.svg" alt="">
+                <h3 class="py-1">FAST DELIVERY</h3>
+            </div>
+            <div class="col text-center">
+                <img src="~/content/images/home/about/icon/fav3.svg" alt="">
+                <h3 class="py-2">NICE PRISE</h3>
+            </div>
+            <div class="col-xl-3 col-xxl-4"></div>
+        </div>
+    </div>
+</div>
+<!--Trending-->
+<div class="container-xxl" id="trending_ctn">
+    <div class="row g-3">
+    <!---->
+    <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column">
+        <div class="price_block">
+            From
+            <span class="price">17</span>
+            <span class="currency">$</span>
+        </div>
+        <div class="info_block">
+            <div class="name">
+                <h3>BEEF CLASSIC</h3>
+                <h2>BURGERS</h2>
+            </div>
+            <p class="desc text--subfont">Try this delicious burger containing of two fried parts of a whole-grain bun, a
+                juicy
+                piece of beef,
+                cheese and lettuce</p>
+            <div class="btn_ctn"><a
+                    class="rounded-circle btn--yellow btn--hover btn__a flex justify-content-center align-items-center"
+                    href="#"><span><i class="fa-sharp fa-light fa-plus"></i></span></a></div>
+        </div>
+        <img class="mt-3" src="~/content/images/home/trending/beef_classic_burger.png" alt="">
+    </div>
+    <!---->
+    <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column flex-md-column-reverse">
+        <div class="info_block">
+            <div class="price_block">
+                From
+                <span class="price">12.00</span>
+                <span class="currency">$</span>
+            </div>
+            <div class="name">
+                <h3>THE BEST PASTA</h3>
+            </div>
+            <p class="desc text--subfont">Our pasta with seafood is mixed perfectly with a glass of white wine</p>
+            <div class="btn_ctn"><a
+                    class="rounded-circle btn--yellow btn--hover btn__a flex justify-content-center align-items-center"
+                    href="#"><span><i class="fa-sharp fa-light fa-plus"></i></span></a></div>
+        </div>
+        <img src="~/content/images/home/trending/the_best_pasta.png" alt="">
+    </div>
+    <!---->
+    <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column">
+        <div class="price_block">
+            From
+            <span class="price">13.50</span>
+            <span class="currency">$</span>
+        </div>
+        <div class="info_block">
+            <div class="name">
+                <h3>SEASON SOUP</h3>
+            </div>
+            <p class="desc text--subfont">We offer you a special dish – our season soup containing season vegetables</p>
+            <div class="btn_ctn"><a
+                    class="rounded-circle btn--yellow btn--hover btn__a flex justify-content-center align-items-center"
+                    href="#"><span><i class="fa-sharp fa-light fa-plus"></i></span></a></div>
+        </div>
+        <img src="~/content/images/home/trending/season_soup.png" alt="">
+    </div>
+    <!---->
+    <div class="col-12 col-sm-6 col-lg-4 d-flex flex-column flex-md-column-reverse d-lg-none">
+        <div class="info_block">
+            <div class="price_block">
+                From
+                <span class="price">11.00</span>
+                <span class="currency">$</span>
+            </div>
+            <div class="name">
+                <h3>CALIFONIA MAKI</h3>
+            </div>
+            <p class="desc text--subfont">A type of sushi prepared with mangoes, avocadoes, cucumber, kani/crab sticks then rolled with nori sheets inside out then coated with a layer of masago</p>
+            <div class="btn_ctn"><a
+                    class="rounded-circle btn--yellow btn--hover btn__a flex justify-content-center align-items-center"
+                    href="#"><span><i class="fa-sharp fa-light fa-plus"></i></span></a></div>
+        </div>
+        <img src="~/content/images/home/trending/califonia_maki.png" alt="">
+    </div>
+    </div>
+</div>
+
+<!--Promotion-->
+<div class="container-xxl mt-3 py-5" id="promotion_ctn">
+    <div class="d-block d-xl-none my-2">
+        <a class="text-decoration-none" asp-controller="menu" asp-action="index">
+            <div class="promotion__main d-flex justify-content-center align-items-center">
+                <div class="main__content text-center">
+                    <h3>
+                        <span>SPECIAL OFFER</span>
+                        <br>
+                        BUY 2 GET 3
+                    </h3>
+                    <p class="mt-5">Use Our Special Offer Quicker!</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 col-xl-3 my-2">
+            <a class="text-decoration-none" asp-controller="menu" asp-action="index">
+                <div class="promotion__left d-flex justify-content-center align-items-end">
+                    <div class="left__content text-center mb-5">
+                        <img class="mt-5" src="~/content/images/home/promotion/happy.svg" alt="happy">
+                        <h4>HOURS</h4>
+                        <p>Mon - Fri 1 P.M. - 3 P.M.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xl-6 d-none d-xl-block my-2">
+            <a class="text-decoration-none" asp-controller="menu" asp-action="index ">
+                <div class="promotion__main d-flex justify-content-center align-items-center">
+                    <div class="main__content text-center">
+                        <h3>
+                            <span>SPECIAL OFFER</span>
+                            <br>
+                            BUY 2 GET 3
+                        </h3>
+                        <p class="mt-5">Use Our Special Offer Quicker!</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 my-2">
+            <a class="text-decoration-none" asp-controller="menu" asp-action="index">
+                <div class="promotion__right">
+                    <div class="right__content text-center">
+                        <img class="mt-5" src="~/content/images/home/promotion/15-off.svg" alt="">
+                        <h4>FIRST ORDER</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!--Food-->
+<div class="container-xxl mt-3 py-5" id="food_ctn">
+    <!--Menu-->
+    <div class="container-xxl row row-cols-3 row-cols-xl-6" id="food_menu">
+        <!---->
+        <div class="col d-flex flex-column align-items-center food_type" onclick="showFood(this)" id="food_menu_burgers">
+            <img src="~/content/images/home/food/burgers.svg" alt="">
+            <span>BURGERS</span>
+        </div>
+        <!---->
+        <div class="col d-flex flex-column align-items-center food_type" onclick="showFood(this)" id="food_menu_pizza">
+            <img src="~/content/images/home/food/pizza.svg" alt="">
+            <span>PIZZA</span>
+        </div>
+        <!---->
+        <div class="col d-flex flex-column align-items-center food_type" onclick="showFood(this)" id="food_menu_drinks">
+            <img src="~/content/images/home/food/drinks.svg" alt="">
+            <span>DRINKS</span>
+        </div>
+        <!---->
+        <div class="col d-flex flex-column align-items-center food_type" onclick="showFood(this)" id="food_menu_pasta">
+            <img src="~/content/images/home/food/pasta.svg" alt="">
+            <span>PASTA</span>
+        </div>
+        <!---->
+        <div class="col d-flex flex-column align-items-center food_type" onclick="showFood(this)" id="food_menu_soup">
+            <img src="~/content/images/home/food/soup.svg" alt="">
+            <span>SOUP</span>
+        </div>
+        <!---->
+        <div class="col d-flex flex-column align-items-center food_type" onclick="showFood(this)" id="food_menu_sushi">
+            <img src="~/content/images/home/food/sushi.svg" alt="">
+            <span>SUSHI</span>
+        </div>
+    </div>
+    <!--List food-->
+    <div class="mt-5" id="food_list">
+                @{foreach (var category in categories)
+                    {   
+                        string htmlString;
+                        if(category.CategoryId==1)
+                        {
+                            htmlString = "<div class='food_menu_list' id='"+ @category.CategoryName.ToString().ToLower() + "'><div class='slick_slide responsive row px-3'>";
+                        }
+                        else
+                        {
+                            htmlString = "<div class='food_menu_list d-none' id='"+ @category.CategoryName.ToString().ToLower() + "'><div class='slick_slide responsive row gx-3'>";
+                        }
+                        @Html.Raw(htmlString);
+                        var productsByCategory = (from p in products where p.CategoryId == category.CategoryId select p).ToList(); 
+                        if(productsByCategory!=null)
+                        {
+                            foreach(var product in productsByCategory)
+                            {
+                            <div class="col slick_item_ctn">
+                                <div class="card slick_item">
+                                    @{
+                                    StringBuilder sb = new StringBuilder();
+                                    sb.Append(@product.ProductName.ToLower().Replace(" ", "_")).Append(".png");
+                                    string imgName = sb.ToString();
+                                    }
+                                    <a asp-controller="product" asp-action="index" asp-route-productid="@product.ProductId">
+                                   <img src="~/content/images/menu/@product.category.CategoryName.ToLower()/@imgName?+@DateTime.Now.Ticks.ToString()"  class="card-img-top"
+                                        alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title ps-0"><a class="card-title__link text-decoration-none text-truncate" asp-controller="Menu" asp-action="Product" asp-route-id="@product.ProductId"><span>@product.ProductName</span></a></h5>
+                                        <div class="price_block d-flex">
+                                            <div class="currency">$</div>
+                                            <div class="price">@product.Price</div>
+                                        </div>
+                                        <p class="card-text text-truncate">@product.Description</p>
+                                        <a asp-controller="cart" asp-action="AddToCart" asp-route-productid="@product.ProductId" class="btn rounded-pill btn__a btn--yellow btn--hover"><span><i class="fa-solid fa-cart-shopping"></i>&nbsp;ADD TO CART</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            }
+                        }
+                        @Html.Raw(" </div></div>")
+                    }
+                }
+<!--Delivery-->
+<div class="container-xxl mt-3 row position-relative p-0 pt-5 m-auto" id="delivery_ctn">
+    <!---->
+    <div
+        class="col-lg d-flex align-items-center justify-content-center flex-column pt-5 pt-lg-1 ps-lg-1 pb-lg-5 my-1 my-lg-0">
+        <img class="" src="~/content/images/home/delivery/choose.png" alt="">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <div class="d-flex align-items-center my-3">
+                <h3>CHOOSE</h3>
+                <img src="~/content/images/home/delivery/icon/fav4.svg" alt="">
+            </div>
+            <p class="text-center text-lg-start p-0 px-lg-5">Select food, which you want now the most and don’t
+                forget about drinks</p>
+        </div>
+    </div>
+    <!---->
+    <div class="col-lg py-5 d-flex flex-column align-items-lg-end align-items-center my-1 my-lg-0">
+        <div class="">
+            <div class="d-flex align-items-center justify-content-center">
+                <h3>MAKE AN ORDER</h3>
+                <img src="~/content/images/home/delivery/icon/fav5.svg" alt="">
+            </div>
+            <p class="text-center text-lg-start p-0 px-lg-5">Contact us and provide our agent with correct
+                information about your order</p>
+        </div>
+        <img src="~/content/images/home/delivery/order.png" alt="">
+    </div>
+    <!---->
+    <div class="col-lg position-relative pe-0 d-flex flex-column align-items-lg-end align-items-center my-1 my-lg-0">
+        <img class="" src="~/content/images/home/delivery/receive.png" alt="">
+        <div>
+            <div class="d-flex align-items-center justify-content-center">
+                <h3>RECEIVE</h3>
+                <img src="~/content/images/home/delivery/icon/fav6.svg" alt="">
+            </div>
+            <p class="text-center text-lg-start p-0 px-lg-5">Get your order as quickly as possible and enjoy
+                your
+                meal</p>
+        </div>
+    </div>
+</div>

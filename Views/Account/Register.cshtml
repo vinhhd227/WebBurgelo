@@ -1,0 +1,84 @@
+@model RegisterModel
+@{
+}
+<div class="container-xxl m-auto row row-cols-1 row-cols-lg-2" id="login_ctn">
+    <div class="col" id="login_ctn__pic_ctn">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+            <h2>Easy</h2>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Order</h3>
+            <h2>Fast</h2>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delivery</h3>
+        </div>
+    </div>
+    <div class="col m-auto p-5" id="login_ctn__form_ctn">
+        <img src="~/content/images/layout/logo-burgelo.svg" alt="">
+        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Register</h5>
+        <form method="post" asp-controller="account" asp-action="registerconfirm">
+            @if (@TempData["message"] != null)
+            {
+                <div class="alert alert-danger">
+                    @TempData["message"]
+                </div>
+            }
+            <!-- User Name input -->
+            <div class="form-outline mb-4">
+                <label asp-for="AccountName" class="form-label"></label>
+                <input asp-for="AccountName" class="form-control text--subfont">
+                <span asp-validation-for="AccountName" class="text text-danger d-block m-2"></span>
+            </div>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <label asp-for="Email" class="form-label"></label>
+                <input asp-for="Email" class="form-control text--subfont">
+                <span asp-validation-for="Email" class="text text-danger d-block m-2"></span>
+            </div>
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <label asp-for="Password" class="form-label"></label>
+                <input asp-for="Password" class="form-control" type="password">
+                <span asp-validation-for="Password" class="text text-danger d-block m-2"></span>
+            </div>
+            <div class="form-outline mb-4">
+                <label asp-for="PasswordConfirm" class="form-label"></label>
+                <input asp-for="PasswordConfirm" class="form-control" type="password">
+                <span asp-validation-for="PasswordConfirm" class="text text-danger d-block m-2"></span>
+            </div>
+
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+                @* <div class="col">
+                <!-- Checkbox -->
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                <label class="form-check-label" for="form2Example31"> Checkbox </label>
+                </div>
+                </div> *@
+
+                @* <div class="col">
+                <!-- Simple link -->
+                <a href="#!">Forgot password?</a>
+                </div> *@
+            </div>
+            <!-- Submit button -->
+            <div class="container d-flex justify-content-center">
+                <button type="submit" class="btn btn--yellow btn--hover btn-block m-auto">Register</button>
+            </div>
+
+
+
+            <!-- Register buttons -->
+            <div class="text-center">
+                <p class="m-3">Have an account? <a asp-controller="account" asp-action="login" class="text-decoration-none">Login</a>
+                </p>
+                @* <p>or sign up with:</p>
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+                </button>
+
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-google"></i> *@
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

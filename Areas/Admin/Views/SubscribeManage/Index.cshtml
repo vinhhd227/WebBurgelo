@@ -1,0 +1,31 @@
+@model List<SubscribeModel>
+@{
+    ViewData["Title"] = "Subscriber";
+    int i = 0;
+}
+<h1>@ViewData["Title"]</h1>
+@if (@TempData["message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["message"]
+    </div>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var subscribe in Model)
+        {
+            i++;
+            
+            <tr>
+                <th scope="row">@i</th>
+                <td>@subscribe.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>

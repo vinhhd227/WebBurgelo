@@ -1,0 +1,43 @@
+@model ProductModel
+<h1>Sửa thông tin món ăn</h1>
+@using (Html.BeginForm("Update", "ProductManage", FormMethod.Post,
+new { enctype = "multipart/form-data" }))
+{
+  <div class="mb-3 d-none">
+    <label asp-for="ProductId" class="form-label"></label>
+    <input asp-for="ProductId" class="form-control">
+    <span asp-validation-for="ProductId" class="text text-danger d-block m-2"></span>
+  </div>
+  <div class="mb-3">
+    <label asp-for="ProductName" class="form-label"></label>
+    <input asp-for="ProductName" class="form-control">
+    <span asp-validation-for="ProductName" class="text text-danger d-block m-2"></span>
+  </div>
+  <div class="mb-3">
+    <label asp-for="Description" class="form-label"></label>
+    <input asp-for="Description" class="form-control">
+    <span asp-validation-for="Description" class="text text-danger d-block m-2"></span>
+  </div>
+  <div class="mb-3">
+    <label asp-for="Price" class="form-label"></label>
+    <input asp-for="Price" class="form-control">
+    <span asp-validation-for="Price" class="text text-danger d-block m-2"></span>
+  </div>
+  <div class="form-group mb-3">
+    <label for="FileUpload" class="form-label">Ảnh</label>
+    <input type="file" name="FileUpload" id="FileUpload" class="form-control">
+  </div>
+  <div class="mb-3">
+    <label asp-for="CategoryId" class="form-label">Danh mục</label>
+    <select class="form-select" asp-for="CategoryId">
+      <option value="1">Burgers</option>
+      <option value="2">Pizza</option>
+      <option value="3">Drinks</option>
+      <option value="4">Pasta</option>
+      <option value="5">Soup</option>
+      <option value="6">Sushi</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Lưu</button>
+  <a asp-action="index" class="btn btn-primary">Quay lại</a>
+}

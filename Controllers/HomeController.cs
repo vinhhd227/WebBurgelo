@@ -41,9 +41,9 @@ public class HomeController : Controller
         }
         else
         {
-            // Console.WriteLine(SearchString);
+            Console.WriteLine(SearchString);
             var qr = from p in _burgeloContext.products where p.ProductName.ToLower().Contains(SearchString.ToLower()) select p;
-            if (qr == null)
+            if (qr.Count() == 0)
             {
                 ViewBag.status = 1;
                 return View();
@@ -51,7 +51,6 @@ public class HomeController : Controller
             else
             {
                 foreach (var p in qr)
-                    // Console.WriteLine(p.ProId + " " + p.Name);
                     ViewBag.status = 2;
                 ViewData["SearchString"] = SearchString;
                 List<ProductModel> products = qr.ToList();

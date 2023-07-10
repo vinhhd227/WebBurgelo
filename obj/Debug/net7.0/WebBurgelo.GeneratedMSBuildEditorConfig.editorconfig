@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/WebBurgelo/WebBurgelo/Areas/Admin/Views/OrderManage/Manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJNYW5hZ2VcTWFuYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/WebBurgelo/WebBurgelo/Areas/Admin/Views/ProductManage/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdE1hbmFnZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -172,10 +176,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/WebBurgelo/WebBurgelo/Views/CheckOut/LoginAlert.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRcTG9naW5BbGVydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/WebBurgelo/WebBurgelo/Views/CheckOut/PlaceOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlY2tPdXRcUGxhY2VPcmRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -216,12 +216,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/WebBurgelo/WebBurgelo/Views/Shared/LoginAlert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExvZ2luQWxlcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/WebBurgelo/WebBurgelo/Views/Shared/_AlertMessage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BbGVydE1lc3NhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/WebBurgelo/WebBurgelo/Views/Shared/_CartPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJ0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/WebBurgelo/WebBurgelo/Views/Shared/_DangerMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9EYW5nZXJNZXNzYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/WebBurgelo/WebBurgelo/Views/Shared/_MenuEvelator.cshtml]

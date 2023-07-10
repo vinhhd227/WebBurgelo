@@ -10,7 +10,8 @@ namespace WebBurgelo.Controllers;
 
 [Route("/checkout/[action]")]
 public class CheckOutController : Controller
-{    private readonly IWebHostEnvironment _env;
+{
+    private readonly IWebHostEnvironment _env;
     private readonly BurgeloContext _burgeloContext;
     private readonly AccountService _accountService;
     private readonly CartService _cartService;
@@ -36,14 +37,14 @@ public class CheckOutController : Controller
         }
         else
         {
+            Console.WriteLine("CheckOut");
             CheckOutModel model = new CheckOutModel();
             UserModel user = await _burgeloContext.users.FindAsync(_accountService.GetAccountInfo().UserId);
-            Console.WriteLine(user.UserName);
-            if(user.RoleId == 1)
+            if (user.RoleId == 1)
             {
                 return RedirectToAction(nameof(EmailAlert));
             }
-            model.UserName = user.UserName;
+            model.CustomerName = user.UserName;
             model.Address = user.Address;
             model.PhoneNumber = user.PhoneNumber;
             model.PaymentMethod = 1;
@@ -53,27 +54,38 @@ public class CheckOutController : Controller
 
     }
     [HttpPost]
-    public async Task<IActionResult> PlaceOrder([Bind("UserName", "Address", "PhoneNumber", "PaymentMethod")] CheckOutModel model)
+    public async Task<IActionResult> PlaceOrder([Bind("CustomerName", "Address", "PhoneNumber", "PaymentMethod")] CheckOutModel model)
     {
         if (ModelState.IsValid)
         {
             Console.WriteLine("Model Oke");
-            Console.WriteLine(model.UserName);
+            Console.WriteLine(model.CustomerName);
             Console.WriteLine(model.Address);
             Console.WriteLine(model.PhoneNumber);
             Console.WriteLine(model.PaymentMethod);
             UserModel user = await _burgeloContext.users.FindAsync(_accountService.GetAccountInfo().UserId);
             try
             {
-                List<CartItem> cartItems = _cartService.GetCartItems();
-                OrderModel order = new OrderModel();
                 var random = new Random();
                 const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-
-                string code = new string(Enumerable.Repeat(chars, 9).Select(s => s[random.Next(s.Length)]).ToArray());
+                 string code = new string(Enumerable.Repeat(chars, 9).Select(s => s[random.Next(s.Length)]).ToArray());
+                // DateTime date = DateTime.Now;
+                DeliveryModel delivery = new DeliveryModel()
+                {
+                    ShipperId = 0,
+                    DeliveryCode = code
+                };
+                await _burgeloContext.deliveries.AddAsync(delivery);
+                await _burgeloContext.SaveChangesAsync();
+                List<CartItem> cartItems = _cartService.GetCartItems();
+                OrderModel order = new OrderModel();
+                // var random = new Random();
+                // const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                // code = new string(Enumerable.Repeat(chars, 9).Select(s => s[random.Next(s.Length)]).ToArray());
                 order.OrderCode = code;
                 order.UserId = user.UserId;
-                order.CustomerName = model.UserName;
+                order.DeliveryId = await (from d in _burgeloContext.deliveries where d.DeliveryCode == code select d.DeliveryId).FirstOrDefaultAsync();
+                order.CustomerName = model.CustomerName;
                 order.Phone = model.PhoneNumber;
                 order.Address = model.Address;
                 order.OrderDateTime = DateTime.Now;
@@ -97,7 +109,7 @@ public class CheckOutController : Controller
                     await _burgeloContext.SaveChangesAsync();
                 }
                 _cartService.ClearCart();
-                var orders = await (from od in _burgeloContext.orders where od.UserId == user.UserId && od.DeliveryStatus < 2 select od).ToListAsync();
+                var orders = await (from od in _burgeloContext.orders where od.UserId == user.UserId && od.Delivery.DeliveryStatus < 2 select od).ToListAsync();
                 _orderService.SaveOrderSession(orders);
                 Console.WriteLine("Order Deatail Maked");
             }

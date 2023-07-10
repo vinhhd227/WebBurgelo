@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebBurgelo.Models;
 
-namespace MVC.Areas_Admin_Controllers
+namespace WebBurgelo.Areas_Admin_Controllers
 {
 
     [Area("Admin")]

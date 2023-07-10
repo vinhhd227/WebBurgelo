@@ -1,11 +1,31 @@
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        Menu
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" asp-area="Database" asp-controller="DbManage" asp-action="Index">Database Manage</a></li>
-        <li><a class="dropdown-item" asp-area="MailUltis" asp-controller="MailUltis" asp-action="Index">Mail Ultis</a></li>
-        <li><a class="dropdown-item" asp-controller="home" asp-action="Index">Home</a></li>
-    </ul>
+@using Microsoft.AspNetCore.Http
+@using Newtonsoft.Json
+@inject AccountService _accountService;
+@{
+    var loggedAccount = _accountService.GetAccountInfo();
+    if (loggedAccount.AccountId != 0)
+    {
+        <div class="dropdown">
+            <button class="btn btn-secondary rounded-pill dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Hello
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" asp-controller="home" asp-action="Index"><span>Home
+                            <i class="fa-light fa-house"></i></span></a>
+                </li>
+                <li>
+                    <a class="dropdown-item" asp-area="Admin" asp-controller="DbManage" asp-action="Index"><span>Database
+                            Manage <i class="fa-light fa-database"></i></span></a>
+                </li>
+                <li><a class="dropdown-item" asp-controller="account" asp-action="logout"><span>Logout <i
+                                class="fa-light fa-person-to-door"></i></span></a></li>
+            </ul>
+        </div>
+    }
+    else
+    {
+        <a asp-controller="account" asp-action="login" class="text-decoration-none"><span>&ensp;Login</span></a>
+    }
+}
 </div>

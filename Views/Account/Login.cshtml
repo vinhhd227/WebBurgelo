@@ -16,9 +16,10 @@
         <form method="get" asp-controller="account" asp-action="logincheck">
             @if (@TempData["message"] != null)
             {
-                <div class="alert alert-danger">
+                <partial name="_DangerMessage"></partial>
+                @* <div class="alert alert-danger">
                     @TempData["message"]
-                </div>
+                </div> *@
             }
             <!-- User Name input -->
             <div class="form-outline mb-4">
@@ -41,7 +42,7 @@
             </div>
             <!-- Submit button --> 
             <div class="container d-flex justify-content-center">
-                <button type="submit" class="btn btn--yellow btn-block m-auto">Sign in</button>
+                <button type="submit" class="btn btn--yellow btn--hover rounded-pill btn-block m-auto">Sign in</button>
             </div>
             <!-- Register buttons -->
             <div class="text-center">

@@ -8,46 +8,51 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Razor_4.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/fontawesome/css/all.css" />
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="Admin" asp-controller="AdminManage" asp-action="Index">Burgelo Admin</a>
+                <a class="navbar-brand" asp-area="Admin" asp-controller="AdminManage" asp-action="Index">Burgelo
+                    Admin</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="DbManage"
-                                asp-action="Index">Database</a>
-                        </li>
                         @* <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="MailUltis" asp-controller="MailUltis"
-                                asp-action="index">Send mail</a>
+                        <a class="nav-link text-dark" asp-area="MailUltis" asp-controller="MailUltis"
+                        asp-action="index">Send mail</a>
                         </li> *@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Admin" asp-controller="ProductManage"
-                                asp-action="Index">Product</a>
+                                asp-action="Index"><span>Product Manage <i
+                                        class="fa-light fa-burger-fries"></i></span></a>
                         </li>
                         @* <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="ContactManage"
-                                asp-action="Index">Contact</a>
+                        <a class="nav-link text-dark" asp-area="Admin" asp-controller="ContactManage"
+                        asp-action="Index">Contact</a>
                         </li> *@
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Admin" asp-controller="OrderManage"
-                                asp-action="Index">Order Manage</a>
+                                asp-action="Index"><span>Order Manage <i class="fa-thin fa-list"></i></span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Admin" asp-controller="DeliveryManage"
+                                asp-action="Index"><span>Delivery Manage <i
+                                        class="fa-sharp fa-light fa-truck-fast"></i></span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Admin" asp-controller="UserManage"
-                                asp-action="Index">User Manage</a>
+                                asp-action="Index"><span>User Manage <i class="fa-light fa-users"></i></span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Admin" asp-controller="SubscribeManage"
-                                asp-action="Index">Subscribe Manage</a>
+                                asp-action="Index"><span>Subscribe Manage <i
+                                        class="fa-light fa-envelope"></i></span></a>
                         </li>
                     </ul>
                     <partial name="_AdminMenuManage"></partial>
@@ -63,7 +68,8 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - Razor_4 - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2023 - WebBurgelo
+            @* - <a asp-area="" asp-page="/Privacy">Privacy</a> *@
         </div>
     </footer>
 

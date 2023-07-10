@@ -73,6 +73,37 @@ namespace WebBurgelo.Migrations
                     b.ToTable("Category");
                 });
 
+            modelBuilder.Entity("WebBurgelo.Models.DeliveryModel", b =>
+                {
+                    b.Property<int>("DeliveryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("DeliveryId");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DeliveryId"));
+
+                    b.Property<int>("CustomerConfirm")
+                        .HasColumnType("int")
+                        .HasColumnName("CustomerConfirm");
+
+                    b.Property<string>("DeliveryCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("DeliveryCode");
+
+                    b.Property<int>("DeliveryStatus")
+                        .HasColumnType("int")
+                        .HasColumnName("DeliveryStatus");
+
+                    b.Property<int>("ShipperId")
+                        .HasColumnType("int")
+                        .HasColumnName("ShipperId");
+
+                    b.HasKey("DeliveryId");
+
+                    b.ToTable("Delivery");
+                });
+
             modelBuilder.Entity("WebBurgelo.Models.OrderDetailModel", b =>
                 {
                     b.Property<int>("OrderDetailId")
@@ -125,9 +156,9 @@ namespace WebBurgelo.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("CustomerName");
 
-                    b.Property<int>("DeliveryStatus")
+                    b.Property<int>("DeliveryId")
                         .HasColumnType("int")
-                        .HasColumnName("DeliveryStatus");
+                        .HasColumnName("DeliveryId");
 
                     b.Property<string>("OrderCode")
                         .IsRequired()
@@ -161,6 +192,8 @@ namespace WebBurgelo.Migrations
 
                     b.HasKey("OrderId");
 
+                    b.HasIndex("DeliveryId");
+
                     b.ToTable("Order");
                 });
 
@@ -181,6 +214,10 @@ namespace WebBurgelo.Migrations
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)")
                         .HasColumnName("Description");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("Image");
 
                     b.Property<int>("Price")
                         .HasColumnType("int")
@@ -345,6 +382,17 @@ namespace WebBurgelo.Migrations
                     b.Navigation("order");
 
                     b.Navigation("product");
+                });
+
+            modelBuilder.Entity("WebBurgelo.Models.OrderModel", b =>
+                {
+                    b.HasOne("WebBurgelo.Models.DeliveryModel", "Delivery")
+                        .WithMany()
+                        .HasForeignKey("DeliveryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Delivery");
                 });
 
             modelBuilder.Entity("WebBurgelo.Models.ProductModel", b =>

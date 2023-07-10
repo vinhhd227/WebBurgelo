@@ -1,34 +1,51 @@
 @model List<ProductModel>
 @{
-    string SearchStr ="";
+    string SearchStr = "";
     if (ViewData["SearchString"] != null)
     {
         SearchStr = ViewData["SearchString"] as string;
     }
     int status = ViewBag.status;
-    Console.WriteLine(status);
 }
 <!--Search-->
 <div class="container-xxl m-auto" id="search_page_ctn">
     <div class="my-3">
         <form asp-controller="home" asp-action="search" class="w-100 d-flex justify-content-center" method="get">
-            <input class="rounded border-1 border px-4 py-3 me-3" type="" name="SearchString" id="search_input"
-                placeholder="Enter keyword search" value="">
+            <input class="rounded-pill border-1 border px-4 py-3 me-3 form-control" type="text" name="SearchString"
+                list="list-timezone" id="input-datalist" placeholder="Enter keyword search" value="">
+            <datalist id="list-timezone">
+                <option>burger</option>
+                <option>sushi</option>
+                <option>pasta</option>
+                <option>coke</option>
+                <option>soup</option>
+                <option>maki</option>
+                <option>juice</option>
+                <option>pizza</option>
+                <option>tea</option>
+                <option>milk</option>
+                <option>soda</option>
+                <option>coffe</option>
+            </datalist>
             <button class="btn btn--yellow btn--hover rounded p-4 shadow-none" type="submit">
                 <span class="icon--white"><i class="fa-light fa-magnifying-glass"></i></span>
             </button>
         </form>
+        <script>
+            document.addEventListener('DOMContentLoaded', e => {
+                $('#input-datalist').autocomplete()
+            }, false);
+        </script>
         @if (status == 2)
         {
             @if (Model != null)
             {
-                Console.WriteLine("notnull");
                 <h1 class="text-center my-5">Search Results for:@if (SearchStr != null)
                     {
                         @Html.Raw(SearchStr)
                     }<span></span></h1>
                 <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 g-2">
-                <!---->
+                    <!---->
                     @foreach (var product in Model)
                     {
                         StringBuilder sb = new StringBuilder();
@@ -37,24 +54,28 @@
                         <div class="col">
                             <div class="card">
                                 <a asp-controller="product" asp-action="index" asp-route-productid="@product.ProductId">
-                                    <img src="~/content/images/menu/@product.category.CategoryName.ToLower()/@imgName?+@DateTime.Now.Ticks.ToString()"  class="card-img-top"
-                                        alt="...">
-                                        </a>
-                                    <div class="card-body">
-                                        <h5 class="card-title text-truncate"><a asp-controller="Menu" asp-action="Product" asp-route-id="@product.ProductId" class="text-decoration-none">@product.ProductName</a></h5>
-                                <div class="price_block d-flex">
-                                    <div class="currency">$</div>
-                                    <div class="price">@product.Price</div>
-                                </div>
-                                <p class="card-text ps-4 text-truncate">@product.Description</p>
-                                <a asp-controller="cart" asp-action="AddToCart" asp-route-productid="@product.ProductId" class="btn rounded-pill btn__a btn--yellow btn--hover">
-                                    <span><i class="fa-solid fa-cart-shopping"></i>&nbsp;ADD TO CART</span>
+                                    <img src="~/content/images/menu/@product.category.CategoryName.ToLower()/@imgName?+@DateTime.Now.Ticks.ToString()"
+                                        class="card-img-top" alt="...">
                                 </a>
+                                <div class="card-body">
+                                    <h5 class="card-title text-truncate"><a asp-controller="product" asp-action="index"
+                                            asp-route-productid="@product.ProductId"
+                                            class="text-decoration-none">@product.ProductName</a>
+                                    </h5>
+                                    <div class="price_block d-flex">
+                                        <div class="currency">$</div>
+                                        <div class="price">@product.Price</div>
+                                    </div>
+                                    <p class="card-text ps-4 text-truncate">@product.Description</p>
+                                    <a asp-controller="cart" asp-action="AddToCart" asp-route-productid="@product.ProductId"
+                                        class="btn rounded-pill btn__a btn--yellow btn--hover">
+                                        <span><i class="fa-solid fa-cart-shopping"></i>&nbsp;ADD TO CART</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     }
-                 </div>  
+                </div>
             }
         }
         else if (status == 1)

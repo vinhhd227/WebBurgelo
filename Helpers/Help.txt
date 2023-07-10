@@ -18,14 +18,14 @@ dotnet add package Microsoft.AspNetCore.Http.Abstractions
 dotnet add package Microsoft.AspNetCore.Authentication.Cookies
 dotnet add package Microsoft.AspNetCore.Authentication.Facebook
 dotnet add package Microsoft.AspNetCore.Authentication.Google
-    migrationBuilder.InsertData(
-                    table: "Category",
-                    columns: new[] { "CategoryId", "CategoryName" },
-                    values: new object[] {
+  migrationBuilder.InsertData(
+                  table: "Category",
+                  columns: new[] { "CategoryId", "CategoryName" },
+                  values: new object[] {
                     1,
                     "Burgers"
-                    }
-                );
+                  }
+              );
             migrationBuilder.InsertData(
                 table: "Category",
                 columns: new[] { "CategoryId", "CategoryName" },
@@ -137,76 +137,76 @@ dotnet add package Microsoft.AspNetCore.Authentication.Google
                     1
                          }
                      );
-                     migrationBuilder.InsertData(
-                         table: "Product",
-                         columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                         values: new object[] {
+            migrationBuilder.InsertData(
+                table: "Product",
+                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+                values: new object[] {
                     "Texas Burger",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     1
-                         }
-                     );
-                     migrationBuilder.InsertData(
-                         table: "Product",
-                         columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                         values: new object[] {
+                }
+            );
+            migrationBuilder.InsertData(
+                table: "Product",
+                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+                values: new object[] {
                     "Burger Combo",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     1
-                         }
-                     );
-                      migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+                }
+            );
+            migrationBuilder.InsertData(
+      table: "Product",
+      columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+      values: new object[] {
                     "Beacon Pizza",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     2
-                }
-            );
-             migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+      }
+  );
+            migrationBuilder.InsertData(
+               table: "Product",
+               columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+               values: new object[] {
                     "Kebab Pizza",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     2
-                }
-            );
-             migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+               }
+           );
+            migrationBuilder.InsertData(
+               table: "Product",
+               columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+               values: new object[] {
                     "Margherita Pizza",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     2
-                }
-            );
-             migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+               }
+           );
+            migrationBuilder.InsertData(
+               table: "Product",
+               columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+               values: new object[] {
                     "Mushroom Pizza",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     2
-                }
-            );
-             migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+               }
+           );
+            migrationBuilder.InsertData(
+               table: "Product",
+               columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+               values: new object[] {
                     "Sausage Pizza",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     2
-                }
-            );
+               }
+           );
             migrationBuilder.InsertData(
                 table: "Product",
                 columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
@@ -317,26 +317,26 @@ dotnet add package Microsoft.AspNetCore.Authentication.Google
                     3
                 }
             );
-              migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+            migrationBuilder.InsertData(
+              table: "Product",
+              columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+              values: new object[] {
                     "Hot Cacao",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     3
-                }
-            );
-             migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+              }
+          );
+            migrationBuilder.InsertData(
+               table: "Product",
+               columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+               values: new object[] {
                     "Blue Curacao Soda",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     3
-                }
-            );
+               }
+           );
             migrationBuilder.InsertData(
                 table: "Product",
                 columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
@@ -761,56 +761,108 @@ dotnet add package Microsoft.AspNetCore.Authentication.Google
             );
             migrationBuilder.InsertData(
           table: "Subscribe",
-          columns: new[] {"Email" },
+          columns: new[] { "Email" },
           values: new object[] {
                     "vinhhd227@gmail.com"
                 }
             );
             migrationBuilder.InsertData(
+          table: "Delivery",
+          columns: new[] { "DeliveryId", "ShipperId", "DeliveryStatus", "CustomerConfirm", "DeliveryDate" },
+          values: new object[] {
+                    1,
+                    0,
+                    0,
+                    0,
+                    DateTime.Now
+                }
+            );
+             migrationBuilder.InsertData(
+          table: "Delivery",
+          columns: new[] { "DeliveryId", "ShipperId", "DeliveryStatus", "CustomerConfirm", "DeliveryDate" },
+          values: new object[] {
+                    2,
+                    0,
+                    0,
+                    0,
+                    DateTime.Now
+                }
+            );
+            migrationBuilder.InsertData(
           table: "Order",
-          columns: new[] { "OrderId", "OrderCode", "UserId", "CustomerName", "Phone", "Address" , "OrderDateTime", "SubTotal", "PaymentMethod", "PaymentStatus", "ConfirmStatus", "DeliveryStatus" },
+          columns: new[] { "OrderId", "OrderCode", "UserId", "DeliveryId", "CustomerName", "Phone", "Address", "OrderDateTime", "SubTotal", "ConfirmStatus", "PaymentMethod", "PaymentStatus" },
           values: new object[] {
                     1,
                     "QDAA3IOTQ",
+                    1,
+                    1,
+                    "Hoàng Đông Vĩnh",
+                    "0373431227",
+                    "CT4 Lê ĐỨc Thọ",
+                    DateTime.Today.AddDays(-8),
+                    90.00,
+                    0,
+                    1,
+                    0
+                }
+            );
+
+            migrationBuilder.InsertData(
+ table: "Order Detail",
+ columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity" },
+ values: new object[] {
+                    1,
+                    1,
+                    1,
+                    1
+       }
+   );
+   migrationBuilder.InsertData(
+          table: "Order",
+          columns: new[] { "OrderId", "OrderCode", "UserId", "DeliveryId", "CustomerName", "Phone", "Address", "OrderDateTime", "SubTotal", "ConfirmStatus", "PaymentMethod", "PaymentStatus" },
+          values: new object[] {
+                    2,
+                    "QDAA3IOTQ",
+                    1,
                     1,
                     "Hoàng Đông Vĩnh",
                     "0373431227",
                     "CT4 Lê ĐỨc Thọ",
                     DateTime.Now,
                     90.00,
-                    1,
-                    1,
                     0,
+                    1,
                     0
                 }
             );
-                     migrationBuilder.InsertData(
-          table: "Order Detail",
-          columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity"},
-          values: new object[] {
+
+            migrationBuilder.InsertData(
+ table: "Order Detail",
+ columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity" },
+ values: new object[] {
+                    4,
+                    2,
                     1,
-                    1,
-                    1,
-                    1
-                }
-            );
-             migrationBuilder.InsertData(
-          table: "Order Detail",
-          columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity"},
-          values: new object[] {
+                    5
+       }
+   );
+            migrationBuilder.InsertData(
+         table: "Order Detail",
+         columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity" },
+         values: new object[] {
                     2,
                     1,
                     7,
                     2
-                }
-            );
-             migrationBuilder.InsertData(
-          table: "Order Detail",
-          columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity"},
-          values: new object[] {
+               }
+           );
+            migrationBuilder.InsertData(
+         table: "Order Detail",
+         columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity" },
+         values: new object[] {
                     3,
                     1,
                     18,
                     3
-                }
-            );
+               }
+           );

@@ -8,9 +8,9 @@ public class CategoryModel
 {
     [Key]
     [Column("CategoryId")]
-    [Display(Name = "Mã danh mục")]
+    [Display(Name = "Category Id")]
     public int CategoryId { set; get; }
     [Column("CategoryName")]
-    [Display(Name = "Tên danh mục")]
+    [Display(Name = "Category Name")]
     public string? CategoryName { set; get; }
 }

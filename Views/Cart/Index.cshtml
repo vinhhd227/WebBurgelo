@@ -30,7 +30,7 @@
                   sb.Append(@cartitem.product.ProductName.ToLower().Replace(" ", "_")).Append(".png");
                   string imgName = sb.ToString();
                 }
-                <img src="~/content/images/menu/@cartitem.product.category.CategoryName.ToLower()/@imgName" class="card-img-top"
+                <img src="~/content/images/menu/@cartitem.product.category.CategoryName.ToLower()/@imgName?+@DateTime.Now.Ticks.ToString()" class="card-img-top"
                   alt="...">
               </td>
               <td><a asp-controller="product" asp-action="index" asp-route-productid="@cartitem.product.ProductId">@cartitem.product.ProductName</a></td>

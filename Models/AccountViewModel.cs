@@ -33,11 +33,13 @@ public class RegisterModel
     [EmailAddress]
     public string Email { set; get; }
     [Display(Name = "Password")]
-    [Required(ErrorMessage = "Must enter {0}")]
+    [DataType(DataType.Password)]
+    //[Required(ErrorMessage = "Must enter {0}")]
     [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8,15}$", ErrorMessage = "Password must be between 6 and 20 characters and contain one uppercase letter, one lowercase letter, one digit and one special character.")]
     public string Password { set; get; }
     [Display(Name = "Password Confirm")]
-    [StringLength(100)]
+    [DataType(DataType.Password)]
+    [CompareAttribute("Password", ErrorMessage = "The Password and Confirm Password fields did not match.")]
     [Required(ErrorMessage = "Must enter {0}")]
     public string PasswordConfirm { set; get; }
 }

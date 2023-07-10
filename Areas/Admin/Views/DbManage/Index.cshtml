@@ -8,9 +8,9 @@
     var can_Connect = dbContext.Database.CanConnect();
 }
 <partial name="_AlertMessage"></partial>
-<h1 class="text text-primary">Thông tin về cơ sở dữ liệu</h1>
+<h1 class="text text-primary">Database Info</h1>
 <ul>
-    <li>Tên cơ sở dữ liệu: @dbName</li>
+    <li>Database Name: @dbName</li>
     <li>Source: @connect.DataSource</li>
     <li>State: @connect.State</li>
 </ul>
@@ -29,7 +29,7 @@
 
 @if (!can_Connect)
 {
-    <p class="alert alert-danger">"Không thể kết nối tới Database"</p>
+    <p class="alert alert-danger">"Can't connect to database"</p>
 }
 else
 {
@@ -46,10 +46,10 @@ else
 @if (dbContext.Database.GetPendingMigrations().Any())
 {
     <form method="post">
-        <button type="submit" class="btn btn-success" asp-action="Migrate">Tạo Database (Cập nhật Migration)</button>
+        <button type="submit" class="btn btn-success" asp-action="Migrate">Create Database (Update Migration)</button>
     </form>
 }
 else
 {
-    <a class="btn btn-danger" asp-action="DeleteDb">Xóa Database: @dbName</a>
+    <a class="btn btn-danger" asp-action="DeleteDb">Drop Database: @dbName</a>
 }

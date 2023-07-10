@@ -21,26 +21,27 @@ public class MenuController : Controller
         _cartService = cartService;
     }
     [Route("/menu")]
-    public async Task<IActionResult> Index(string? categoryName)
+    public async Task<IActionResult> Index(string? categoryName = "")
     {
 
-        if (categoryName != null)
+        if (categoryName == "")
         {
-            MenuViewModel model = new MenuViewModel()
-            {
-                products = await (from p in _burgeloContext.products where p.category.CategoryName.ToLower() == categoryName select p).ToListAsync()
-            };
-            return View(model);
-        }
-        else
-        {
+            ViewData["category"] = "Menu";
             MenuViewModel model = new MenuViewModel()
             {
                 products = await _burgeloContext.products.ToListAsync()
             };
             return View(model);
         }
-
+        else
+        {
+            ViewData["category"] = categoryName;
+            MenuViewModel model = new MenuViewModel()
+            {
+                products = await (from p in _burgeloContext.products where p.category.CategoryName.ToLower() == categoryName select p).ToListAsync()
+            };
+            return View(model);
+        }
     }
 
 

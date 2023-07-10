@@ -213,28 +213,36 @@
       "PackagePath": "staticwebassets\\content\\images\\home\\trending\\the_best_pasta.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\Depositphotos_41260055_el0-1.png",
-      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\Depositphotos_41260055_el0-1.png"
+      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\burger_combo.png",
+      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\burger_combo.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\Turkey-Burgers_01.png",
-      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\Turkey-Burgers_01.png"
+      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\chicken_burger.png",
+      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\chicken_burger.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\banana-juice_01-400x400.png",
-      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\banana-juice_01-400x400.png"
+      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\chicken_pasta.png",
+      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\chicken_pasta.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\pasta2_01.png",
-      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\pasta2_01.png"
+      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\coke.png",
+      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\coke.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\pizza3_02.png",
-      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\pizza3_02.png"
+      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\lemon_tea.png",
+      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\lemon_tea.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\sushi1_01.png",
-      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\sushi1_01.png"
+      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\philadelphia_maki.png",
+      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\philadelphia_maki.png"
+    },
+    {
+      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\sausage_pizza.png",
+      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\sausage_pizza.png"
+    },
+    {
+      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\season_soup.png",
+      "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\season_soup.png"
     },
     {
       "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\logo-burgelo.svg",
@@ -279,6 +287,10 @@
     {
       "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\burgers\\bbq_burger.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\burgers\\bbq_burger.png"
+    },
+    {
+      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\burgers\\bbq_burger_2.png",
+      "PackagePath": "staticwebassets\\content\\images\\menu\\burgers\\bbq_burger_2.png"
     },
     {
       "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\burgers\\beacon_burger.png",

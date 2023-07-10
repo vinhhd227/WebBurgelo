@@ -25,26 +25,19 @@ namespace WebBurgelo.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Order",
+                name: "Delivery",
                 columns: table => new
                 {
-                    OrderId = table.Column<int>(type: "int", nullable: false)
+                    DeliveryId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    OrderCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    CustomerName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    OrderDateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    SubTotal = table.Column<int>(type: "int", nullable: false),
-                    PaymentMethod = table.Column<int>(type: "int", nullable: false),
-                    PaymentStatus = table.Column<int>(type: "int", nullable: false),
-                    ConfirmStatus = table.Column<int>(type: "int", nullable: false),
-                    DeliveryStatus = table.Column<int>(type: "int", nullable: false)
+                    DeliveryCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ShipperId = table.Column<int>(type: "int", nullable: false),
+                    DeliveryStatus = table.Column<int>(type: "int", nullable: false),
+                    CustomerConfirm = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Order", x => x.OrderId);
+                    table.PrimaryKey("PK_Delivery", x => x.DeliveryId);
                 });
 
             migrationBuilder.CreateTable(
@@ -82,6 +75,7 @@ namespace WebBurgelo.Migrations
                     ProductName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: true),
                     Price = table.Column<int>(type: "int", nullable: false),
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CategoryId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -92,6 +86,35 @@ namespace WebBurgelo.Migrations
                         column: x => x.CategoryId,
                         principalTable: "Category",
                         principalColumn: "CategoryId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Order",
+                columns: table => new
+                {
+                    OrderId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    OrderCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    DeliveryId = table.Column<int>(type: "int", nullable: false),
+                    CustomerName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OrderDateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    SubTotal = table.Column<int>(type: "int", nullable: false),
+                    ConfirmStatus = table.Column<int>(type: "int", nullable: false),
+                    PaymentMethod = table.Column<int>(type: "int", nullable: false),
+                    PaymentStatus = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Order", x => x.OrderId);
+                    table.ForeignKey(
+                        name: "FK_Order_Delivery_DeliveryId",
+                        column: x => x.DeliveryId,
+                        principalTable: "Delivery",
+                        principalColumn: "DeliveryId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -187,14 +210,14 @@ namespace WebBurgelo.Migrations
                         principalColumn: "UserId",
                         onDelete: ReferentialAction.Cascade);
                 });
-                  migrationBuilder.InsertData(
-                    table: "Category",
-                    columns: new[] { "CategoryId", "CategoryName" },
-                    values: new object[] {
+            migrationBuilder.InsertData(
+                            table: "Category",
+                            columns: new[] { "CategoryId", "CategoryName" },
+                            values: new object[] {
                     1,
                     "Burgers"
-                    }
-                );
+                            }
+                        );
             migrationBuilder.InsertData(
                 table: "Category",
                 columns: new[] { "CategoryId", "CategoryName" },
@@ -306,76 +329,76 @@ namespace WebBurgelo.Migrations
                     1
                          }
                      );
-                     migrationBuilder.InsertData(
-                         table: "Product",
-                         columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                         values: new object[] {
+            migrationBuilder.InsertData(
+                table: "Product",
+                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+                values: new object[] {
                     "Texas Burger",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     1
-                         }
-                     );
-                     migrationBuilder.InsertData(
-                         table: "Product",
-                         columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                         values: new object[] {
+                }
+            );
+            migrationBuilder.InsertData(
+                table: "Product",
+                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+                values: new object[] {
                     "Burger Combo",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     1
-                         }
-                     );
-                      migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+                }
+            );
+            migrationBuilder.InsertData(
+      table: "Product",
+      columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+      values: new object[] {
                     "Beacon Pizza",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     2
-                }
-            );
-             migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+      }
+  );
+            migrationBuilder.InsertData(
+               table: "Product",
+               columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+               values: new object[] {
                     "Kebab Pizza",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     2
-                }
-            );
-             migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+               }
+           );
+            migrationBuilder.InsertData(
+               table: "Product",
+               columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+               values: new object[] {
                     "Margherita Pizza",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     2
-                }
-            );
-             migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+               }
+           );
+            migrationBuilder.InsertData(
+               table: "Product",
+               columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+               values: new object[] {
                     "Mushroom Pizza",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     2
-                }
-            );
-             migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+               }
+           );
+            migrationBuilder.InsertData(
+               table: "Product",
+               columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+               values: new object[] {
                     "Sausage Pizza",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     2
-                }
-            );
+               }
+           );
             migrationBuilder.InsertData(
                 table: "Product",
                 columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
@@ -486,26 +509,26 @@ namespace WebBurgelo.Migrations
                     3
                 }
             );
-              migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+            migrationBuilder.InsertData(
+              table: "Product",
+              columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+              values: new object[] {
                     "Hot Cacao",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     3
-                }
-            );
-             migrationBuilder.InsertData(
-                table: "Product",
-                columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
-                values: new object[] {
+              }
+          );
+            migrationBuilder.InsertData(
+               table: "Product",
+               columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
+               values: new object[] {
                     "Blue Curacao Soda",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
                     15,
                     3
-                }
-            );
+               }
+           );
             migrationBuilder.InsertData(
                 table: "Product",
                 columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
@@ -861,7 +884,7 @@ namespace WebBurgelo.Migrations
                 columns: new[] { "UserId", "UserName", "Gender", "DateOfBirth", "Email", "RoleId", "Address", "PhoneNumber" },
                 values: new object[] {
                     2,
-                    "Khách hàng 1",
+                    "Vinh Hoang 1",
                     "Male",
                     DateTime.Now,
                     "vinhhd227@gmail.com",
@@ -875,7 +898,7 @@ namespace WebBurgelo.Migrations
                 columns: new[] { "AccountId", "AccountName", "Password", "UserId" },
                 values: new object[] {
                     2,
-                    "kh1",
+                    "vinh1",
                     "123",
                     2
                 }
@@ -885,7 +908,7 @@ namespace WebBurgelo.Migrations
                 columns: new[] { "UserId", "UserName", "Gender", "DateOfBirth", "Email", "RoleId", "Address", "PhoneNumber" },
                 values: new object[] {
                     3,
-                    "Khách hàng 2",
+                    "Vinh Hoang 2",
                     "Male",
                     DateTime.Now,
                     "vinh2@gmail.com",
@@ -899,7 +922,7 @@ namespace WebBurgelo.Migrations
                 columns: new[] { "AccountId", "AccountName", "Password", "UserId" },
                 values: new object[] {
                     3,
-                    "kh2",
+                    "vinh2",
                     "123",
                     3
                 }
@@ -909,7 +932,7 @@ namespace WebBurgelo.Migrations
                 columns: new[] { "UserId", "UserName", "Gender", "DateOfBirth", "Email", "RoleId", "Address", "PhoneNumber" },
                 values: new object[] {
                     4,
-                    "Khách hàng 3",
+                    "Vinh Hoang 3",
                     "Male",
                     DateTime.Now,
                     "vinh3@gmail.com",
@@ -923,72 +946,128 @@ namespace WebBurgelo.Migrations
                 columns: new[] { "AccountId", "AccountName", "Password", "UserId" },
                 values: new object[] {
                     4,
-                    "kh3",
+                    "vinh3",
                     "123",
                     4
                 }
             );
             migrationBuilder.InsertData(
           table: "Subscribe",
-          columns: new[] {"Email" },
+          columns: new[] { "Email" },
           values: new object[] {
                     "vinhhd227@gmail.com"
                 }
             );
             migrationBuilder.InsertData(
-          table: "Order",
-          columns: new[] { "OrderId", "OrderCode", "UserId", "CustomerName", "Phone", "Address" , "OrderDateTime", "SubTotal", "PaymentMethod", "PaymentStatus", "ConfirmStatus", "DeliveryStatus" },
+          table: "Delivery",
+          columns: new[] { "DeliveryId", "DeliveryCode", "ShipperId", "DeliveryStatus", "CustomerConfirm", },
           values: new object[] {
                     1,
                     "QDAA3IOTQ",
+                    0,
+                    0,
+                    0
+                }
+            );
+            migrationBuilder.InsertData(
+         table: "Delivery",
+         columns: new[] { "DeliveryId", "DeliveryCode", "ShipperId", "DeliveryStatus", "CustomerConfirm" },
+         values: new object[] {
+                    2,
+                    "QDAA4IOTQ",
+                    0,
+                    0,
+                    0
+               }
+           );
+            migrationBuilder.InsertData(
+          table: "Order",
+          columns: new[] { "OrderId", "OrderCode", "UserId", "DeliveryId", "CustomerName", "Phone", "Address", "OrderDateTime", "SubTotal", "ConfirmStatus", "PaymentMethod", "PaymentStatus" },
+          values: new object[] {
+                    1,
+                    "QDAA3IOTQ",
+                    1,
+                    1,
+                    "Hoàng Đông Vĩnh",
+                    "0373431227",
+                    "CT4 Lê ĐỨc Thọ",
+                    DateTime.Today.AddDays(-8),
+                    90.00,
+                    0,
+                    1,
+                    0
+                }
+            );
+
+            migrationBuilder.InsertData(
+ table: "Order Detail",
+ columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity" },
+ values: new object[] {
+                    1,
+                    1,
+                    1,
+                    1
+       }
+   );
+            migrationBuilder.InsertData(
+                   table: "Order",
+                   columns: new[] { "OrderId", "OrderCode", "UserId", "DeliveryId", "CustomerName", "Phone", "Address", "OrderDateTime", "SubTotal", "ConfirmStatus", "PaymentMethod", "PaymentStatus" },
+                   values: new object[] {
+                    2,
+                    "QDAA4IOTQ",
+                    1,
                     1,
                     "Hoàng Đông Vĩnh",
                     "0373431227",
                     "CT4 Lê ĐỨc Thọ",
                     DateTime.Now,
                     90.00,
-                    1,
-                    1,
                     0,
+                    1,
                     0
-                }
-            );
-                     migrationBuilder.InsertData(
-          table: "Order Detail",
-          columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity"},
-          values: new object[] {
+                         }
+                     );
+
+            migrationBuilder.InsertData(
+ table: "Order Detail",
+ columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity" },
+ values: new object[] {
+                    4,
+                    2,
                     1,
-                    1,
-                    1,
-                    1
-                }
-            );
-             migrationBuilder.InsertData(
-          table: "Order Detail",
-          columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity"},
-          values: new object[] {
+                    5
+       }
+   );
+            migrationBuilder.InsertData(
+         table: "Order Detail",
+         columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity" },
+         values: new object[] {
                     2,
                     1,
                     7,
                     2
-                }
-            );
-             migrationBuilder.InsertData(
-          table: "Order Detail",
-          columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity"},
-          values: new object[] {
+               }
+           );
+            migrationBuilder.InsertData(
+         table: "Order Detail",
+         columns: new[] { "OrderDetailId", "OrderId", "ProductId", "Quantity" },
+         values: new object[] {
                     3,
                     1,
                     18,
                     3
-                }
-            );
-
+               }
+           );
             migrationBuilder.CreateIndex(
                 name: "IX_Account_UserId",
                 table: "Account",
                 column: "UserId",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Order_DeliveryId",
+                table: "Order",
+                column: "DeliveryId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Order Detail_OrderId",
@@ -1040,6 +1119,9 @@ namespace WebBurgelo.Migrations
 
             migrationBuilder.DropTable(
                 name: "User");
+
+            migrationBuilder.DropTable(
+                name: "Delivery");
 
             migrationBuilder.DropTable(
                 name: "Category");

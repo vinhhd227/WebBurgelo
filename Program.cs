@@ -4,7 +4,7 @@ using WebBurgelo.Models;
 
 
 var builder = WebApplication.CreateBuilder(args);
-builder.WebHost.UseUrls("http://localhost:5037/");
+builder.WebHost.UseUrls("http://localhost:5038/");
 
 var services = builder.Services;
 // Add services to the container.
@@ -58,8 +58,8 @@ app.UseStaticFiles();
 app.UseSession();
 app.UseRouting();
 
-app.UseAuthentication();
-app.UseAuthorization();
+// app.UseAuthentication();
+// app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>
 {

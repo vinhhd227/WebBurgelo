@@ -2,10 +2,10 @@
 @model IEnumerable<ProductModel>
 
 @{
-    ViewData["Title"] = "FOOD";
+    ViewData["Title"] = "Product Manage";
 }
 
-<h1>@ViewData["Title"]</h1>
+<h1>FOOD - @ViewData["nav"] </h1>
 
 <p>
     <a asp-area="Admin" asp-controller="ProductManage" asp-action="Create" class="btn btn-primary">ADD NEW</a>
@@ -16,15 +16,46 @@
         @TempData["message"]
     </div>
 }
-@* <form method="get">
-<p>
-Title: <input type="text" />
-<input type="submit" value="Filter" />
-</p>
-</form> *@
-<table class="table">
+<nav class="navbar navbar-expand-sm navbar-light">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDeliveryManage"
+        aria-controls="navbarDeliveryManage" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-light fa-bars-sort"></i></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarDeliveryManage">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="productmanage" asp-action="index"><span>All</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="productmanage" asp-action="index"
+                    asp-route-categoryid=1><span>Burgers <i class="fa-light fa-burger-cheese"></i></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="productmanage" asp-action="index" asp-route-categoryid=2><span>Pizza
+                        <i class="fa-light fa-pizza"></i></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="productmanage" asp-action="index"
+                    asp-route-categoryid=3><span>Drinks <i class="fa-light fa-cup-straw-swoosh"></i> </span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="productmanage" asp-action="index" asp-route-categoryid=4><span>Pasta
+                        <i class="fa-regular fa-pan-food"></i></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="productmanage" asp-action="index" asp-route-categoryid=5><span>Soup
+                        <i class="fa-light fa-bowl-hot"></i></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="productmanage" asp-action="index" asp-route-categoryid=6><span>Sushi
+                        <i class="fa-light fa-sushi"></i></span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<table class="table table-striped table-bordered">
     <thead class="rol">
-        <tr>
+        <tr class="text-center align-middle">
             <th class="col-1">
                 @Html.DisplayNameFor(model =>model.ProductName)
             </th>
@@ -47,10 +78,10 @@ Title: <input type="text" />
         @foreach (var item in Model)
         {
             <tr>
-                <td>
+                <td class="text-center align-middle">
                     @Html.DisplayFor(modelItem => item.ProductName)
                 </td>
-                <td>
+                <td class="text-center align-middle">
                     @Html.DisplayFor(modelItem => item.category.CategoryName)
                 </td>
                 <td>
@@ -58,23 +89,28 @@ Title: <input type="text" />
                         StringBuilder sb = new StringBuilder();
                         sb.Append(@item.ProductName.ToLower().Replace(" ", "_")).Append(".png");
                         string imgName = sb.ToString();
+                        string url = Encoding.UTF8.GetString(Convert.FromBase64String(item.Image));
+                        Console.WriteLine(url);
                     }
-                    <img src="~/content/images/menu/@item.category.CategoryName.ToLower()/@imgName" class="img-thumbnail" alt="ảnh"
-                        width="200" height="200">
+                    @* <img src="~/content/images/menu/@item.category.CategoryName.ToLower()/@imgName" class="img-thumbnail"
+                        alt="ảnh" width="200" height="200"> *@
+                    <img src="~/@url" class="img-thumbnail"
+                        alt="ảnh" width="200" height="200">
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Description)
                 </td>
-                <td>
+                <td class="text-center align-middle">
                     @Html.DisplayFor(modelItem => item.Price)
                 </td>
-                <td>
-                    <a asp-area="Admin" asp-controller="ProDuctManage" asp-action="Read" asp-route-id="@item.ProductId">Xem</a>
+                <td class="text-center align-middle">
+                    <a class="btn btn-success" asp-area="Admin" asp-controller="ProDuctManage" asp-action="Read"
+                        asp-route-id="@item.ProductId">Info</a>
                     |
-                    <a asp-area="Admin" asp-controller="ProDuctManage" asp-action="Update"
-                        asp-route-id="@item.ProductId">Sửa</a> |
-                    <a asp-area="Admin" asp-controller="ProDuctManage" asp-action="Delete"
-                        asp-route-id="@item.ProductId">Xóa</a>
+                    <a class="btn btn-warning" asp-area="Admin" asp-controller="ProDuctManage" asp-action="Update"
+                        asp-route-id="@item.ProductId">Update</a> |
+                    <a class="btn btn-danger" asp-area="Admin" asp-controller="ProDuctManage" asp-action="Delete"
+                        asp-route-id="@item.ProductId">Delete</a>
                 </td>
             </tr>
         }

@@ -1,6 +1,6 @@
 @model MenuViewModel
 @{
-    ViewData["Title"] = "Menu";
+    ViewData["Title"] = ViewData["category"].ToString().ToUpper();
     List<ProductModel> products = new List<ProductModel>();
     if(Model.products is not null)
     {
@@ -11,7 +11,7 @@
 <div class="container-xxl">
     <!--Banner-->
     <div class="container-fluid list_banner">
-        <h1>@ViewData["Title"]</h1>
+        <h1>@ViewData["category"].ToString().ToUpper()</h1>
     </div>
     <!--Main-->
     <div class="container-fluid d-flex flex-column flex-md-row-reverse mt-3 ps-0 ps-xl-2 row" id="category_ctn">

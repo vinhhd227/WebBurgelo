@@ -28,6 +28,8 @@ public class BurgeloContext : DbContext
     public DbSet<UserModel> users { get; set; }
     public DbSet<RoleModel> roles { get; set; }
     public DbSet<OrderModel> orders { get; set; }
+    // public DbSet<PaymentModel> payments { get; set; }
+    public DbSet<DeliveryModel> deliveries { get; set; }
     public DbSet<OrderDetailModel> orderDetails { get; set; }
     public DbSet<VerifyEmailModel> verifyEmails { get; set; }
 }

@@ -29,7 +29,7 @@
                             {
                                 <div class="col-12 col-sm-6 mb-3">
                                     <a a asp-area="admin" asp-controller="adminmanage" asp-action="index"
-                                        class="btn btn--dark btn--hoverlight btn-block m-auto"><span>Manager &nbsp <i class="fa-regular fa-folder-gear"></i>    </span></a>
+                                        class="btn btn--dark btn--hoverlight btn-block m-auto rounded-pill"><span>Manager &nbsp <i class="fa-regular fa-folder-gear"></i>    </span></a>
                                 </div>
                                 break;
                             }
@@ -37,7 +37,7 @@
                             {
                                 <div class="col-12 col-sm-6 mb-3">
                                     <a a asp-area="admin" asp-controller="adminmanage" asp-action="index"
-                                        class="btn btn--dark btn--hoverlight btn-block m-auto"><span>Admin &nbsp <i class="fa-regular fa-folder-gear"></i>    </span></a>
+                                        class="btn btn--dark btn--hoverlight btn-block m-auto rounded-pill"><span>Admin &nbsp <i class="fa-regular fa-folder-gear"></i>    </span></a>
                                 </div>
                                 break;
                             }
@@ -53,9 +53,16 @@
                 <div class="card-body p-4">
                     @if (@TempData["message"] != null)
             {
-                <div class="alert alert-warning">
+                <partial name="_AlertMessage"></partial>
+                @* <div class="alert alert-warning">
                     @TempData["message"]
-                </div>
+                </div> *@
+                @* <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    @TempData["message"]
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+                </div> *@
             }
                     <h5>Information &nbsp &nbsp<a asp-controller="account" asp-action="changeuserinfo" ><i class="far fa-edit"></i></a></h5>
                     <hr class="mt-0 mb-4">
@@ -109,7 +116,7 @@
                     <div class="row pt-1">
                         <div class="col-12 col-sm-6 mb-3">
                             <a asp-controller="account" asp-action="logout"
-                                class="btn btn--yellow btn-block m-auto"><span>Logout &nbsp <i
+                                class="btn btn--yellow btn--hover btn-block m-auto rounded-pill py-2"><span>Logout &nbsp <i
                                         class="fa-regular fa-arrow-right-from-bracket"></i></span></a>
                         </div>
                     </div>

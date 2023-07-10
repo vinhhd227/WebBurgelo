@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gIHBVogjQG9X1yJUWa3i+F2gYj8mK/c3CmYyw6Q04hY=",
+  "Hash": "8IUX2l9+yy5CgcveOPMCTOfSW6cn7oX28yEz9Tikmso=",
   "Source": "WebBurgelo",
   "BasePath": "_content/WebBurgelo",
   "Mode": "Default",
@@ -935,12 +935,12 @@
       "OriginalItemSpec": "wwwroot\\content\\images\\home\\trending\\the_best_pasta.png"
     },
     {
-      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\banana-juice_01-400x400.png",
+      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\burger_combo.png",
       "SourceId": "WebBurgelo",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\",
       "BasePath": "_content/WebBurgelo",
-      "RelativePath": "content/images/layout/contact/banana-juice_01-400x400.png",
+      "RelativePath": "content/images/layout/contact/burger_combo.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -949,15 +949,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\banana-juice_01-400x400.png"
+      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\burger_combo.png"
     },
     {
-      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\Depositphotos_41260055_el0-1.png",
+      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\chicken_burger.png",
       "SourceId": "WebBurgelo",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\",
       "BasePath": "_content/WebBurgelo",
-      "RelativePath": "content/images/layout/contact/Depositphotos_41260055_el0-1.png",
+      "RelativePath": "content/images/layout/contact/chicken_burger.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -966,15 +966,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\Depositphotos_41260055_el0-1.png"
+      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\chicken_burger.png"
     },
     {
-      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\pasta2_01.png",
+      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\chicken_pasta.png",
       "SourceId": "WebBurgelo",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\",
       "BasePath": "_content/WebBurgelo",
-      "RelativePath": "content/images/layout/contact/pasta2_01.png",
+      "RelativePath": "content/images/layout/contact/chicken_pasta.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -983,15 +983,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\pasta2_01.png"
+      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\chicken_pasta.png"
     },
     {
-      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\pizza3_02.png",
+      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\coke.png",
       "SourceId": "WebBurgelo",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\",
       "BasePath": "_content/WebBurgelo",
-      "RelativePath": "content/images/layout/contact/pizza3_02.png",
+      "RelativePath": "content/images/layout/contact/coke.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1000,15 +1000,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\pizza3_02.png"
+      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\coke.png"
     },
     {
-      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\sushi1_01.png",
+      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\lemon_tea.png",
       "SourceId": "WebBurgelo",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\",
       "BasePath": "_content/WebBurgelo",
-      "RelativePath": "content/images/layout/contact/sushi1_01.png",
+      "RelativePath": "content/images/layout/contact/lemon_tea.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1017,15 +1017,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\sushi1_01.png"
+      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\lemon_tea.png"
     },
     {
-      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\Turkey-Burgers_01.png",
+      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\philadelphia_maki.png",
       "SourceId": "WebBurgelo",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\",
       "BasePath": "_content/WebBurgelo",
-      "RelativePath": "content/images/layout/contact/Turkey-Burgers_01.png",
+      "RelativePath": "content/images/layout/contact/philadelphia_maki.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1034,7 +1034,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\Turkey-Burgers_01.png"
+      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\philadelphia_maki.png"
+    },
+    {
+      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\sausage_pizza.png",
+      "SourceId": "WebBurgelo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\",
+      "BasePath": "_content/WebBurgelo",
+      "RelativePath": "content/images/layout/contact/sausage_pizza.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\sausage_pizza.png"
+    },
+    {
+      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\season_soup.png",
+      "SourceId": "WebBurgelo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\",
+      "BasePath": "_content/WebBurgelo",
+      "RelativePath": "content/images/layout/contact/season_soup.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\content\\images\\layout\\contact\\season_soup.png"
     },
     {
       "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\logo-burgelo.svg",
@@ -1205,6 +1239,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\content\\images\\menu.png"
+    },
+    {
+      "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\burgers\\bbq_burger_2.png",
+      "SourceId": "WebBurgelo",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\",
+      "BasePath": "_content/WebBurgelo",
+      "RelativePath": "content/images/menu/burgers/bbq_burger_2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\content\\images\\menu\\burgers\\bbq_burger_2.png"
     },
     {
       "Identity": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\burgers\\bbq_burger.png",

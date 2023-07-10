@@ -14,42 +14,24 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" asp-controller="ordermanage" asp-action="index" asp-route-confirmstatus=0
-                    asp-route-paymentstatus=0 asp-route-deliverystatus=0><span>New Order <i
-                            class="fa-light fa-plus"></i></span></a>
+            @* <li class="nav-item active">
+                <a class="nav-link" asp-controller="ordermanage" asp-action="manage">All</a>
+            </li> *@
+            <li class="nav-item">
+                <form asp-controller="ordermanage" asp-action="manage" method="get">
+                    <input type="date" name="date" id="date" class="rounded-pill p-1 text--subfont">
+                    <button type="submit" class="btn btn-primary">Filter</button>
+                </form>
             </li>
             <li class="nav-item">
-                <a class="nav-link" asp-controller="ordermanage" asp-action="index" asp-route-confirmstatus=1
-                    asp-route-deliverystatus=0><span>Proccessing Order <i
-                            class="fa-light fa-fire-burner"></i></span></a>
+                <a class="nav-link btn btn-warning" asp-controller="ordermanage" asp-action="index" asp-route-confirmstatus=0
+                    asp-route-paymentstatus=0 asp-route-deliverystatus=0>Back</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-controller="ordermanage" asp-action="index" asp-route-confirmstatus=1
-                    asp-route-deliverystatus=1><span>Delivering Order<i class="fa-light fa-moped"></i></span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-route-confirmstatus=1 asp-route-paymentstatus=2
-                    asp-route-deliverystatus=2><span>Successful Order <i
-                            class="fa-light fa-ballot-check"></i></span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-route-confirmstatus=1 asp-route-paymentstatus=2
-                    asp-route-deliverystatus=2><span>Completed Order<i class="fa-light fa-check"></i></span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" asp-controller="ordermanage" asp-action="index"
-                    asp-route-confirmstatus=2><span>Cancelled <i class="fa-light fa-xmark"></i></span></a>
-            </li>
-            <li>
-                <a class="nav-link" asp-controller="ordermanage" asp-action="manage"><span>All <i
-                            class="fa-light fa-magnifying-glass"></i></span></a>
-            </li>
-
         </ul>
     </div>
 </nav>
-<table class="table table-bordered table-striped">
+<a asp-controller="ordermanage" asp-action="clear" class="btn btn-danger mb-2">Clear Old Order</a>
+<table class="table table-bordered">
     <thead class="rol">
         <tr>
             <th>#</th>
@@ -104,15 +86,8 @@
                         }
                         else
                         {
-                            @if (item.Delivery.ShipperId == 0)
-                            {
-                                <p>Waiting</p>
-                            }
-                            else
-                            {
-                                <p>@item.Delivery.shipper.UserName -
-                                    @item.Delivery.shipper.PhoneNumber</p>
-                            }
+                            @* <p>Name: @item.Delivery.shipper.UserName</p>
+                            <p>Phone: @item.Delivery.shipper.PhoneNumber</p> *@
                         }
                     </td>
                     <td>
@@ -215,11 +190,8 @@
                                             <a asp-controller="ordermanage" asp-action="undoorder" asp-route-orderid=@item.OrderId
                                                 class="btn btn-warning">Undo</a>
                                         }
-                                        if (item.Delivery.CustomerConfirm != 1)
-                                        {
-                                            <a asp-controller="ordermanage" asp-action="cancelorder" asp-route-orderid=@item.OrderId
-                                                class="btn btn-danger">Cancel</a>
-                                        }
+                                        <a asp-controller="ordermanage" asp-action="cancelorder" asp-route-orderid=@item.OrderId
+                                            class="btn btn-danger">Cancel</a>
                                         break;
                                     }
                                 case 2:
@@ -240,11 +212,8 @@
                                         <p>&nbsp;</p>
                                         if (item.ConfirmStatus == 1)
                                         {
-                                            if (item.PaymentMethod == 0 || (item.PaymentMethod == 1 && item.PaymentStatus == 2))
-                                            {
-                                                <a asp-controller="ordermanage" asp-action="deliveryorder" asp-route-orderid=@item.OrderId
-                                                    class="btn btn-primary w-100">Delivery</a>
-                                            }
+                                            <a asp-controller="ordermanage" asp-action="deliveryorder" asp-route-orderid=@item.OrderId
+                                                class="btn btn-primary w-100">Delivery</a>
                                         }
                                         break;
                                     }
@@ -289,9 +258,10 @@
             <button class="btn btn-success updateorder" data-orderid="@item.order.OrderId" asp-area="admin"
             asp-controller="OrderManage" asp-action="UpdateOrder">Update</button>
 
-            </td>*@
+            </td> *@
                 </tr>
             }
+
         }
     </tbody>
 </table>

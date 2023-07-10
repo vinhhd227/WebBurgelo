@@ -18,9 +18,9 @@
                 <div class="checkout border border-top border-bottom-0 border-start-0 border-end-0 mt-5 pt-3">
                     <h3>Billing details</h3>
                     <div class="form-outline mb-4">
-                        <label asp-for="UserName" class="form-label"></label>
-                        <input asp-for="UserName" class="form-control text--subfont">
-                        <span asp-validation-for="UserName" class="text text-danger d-block m-2"></span>
+                        <label asp-for="CustomerName" class="form-label"></label>
+                        <input asp-for="CustomerName" class="form-control text--subfont">
+                        <span asp-validation-for="CustomerName" class="text text-danger d-block m-2"></span>
                     </div>
                     <div class="form-outline mb-4">
                         <label asp-for="Address" class="form-label"></label>
@@ -62,7 +62,7 @@
                             </tr>
                         </table>
                         <div class="mb-3">
-                            <label for="company_name" class="form-label">Payment Method</label>
+                            <label for="company_name" class="form-label">Payment Type</label>
                             <select asp-for="PaymentMethod" class="form-control form-control text--subfont">
                                 <option value="0">Cash on delivery (COD)</option>
                                 <option value="1">Momo</option>

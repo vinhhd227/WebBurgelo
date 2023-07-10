@@ -1,12 +1,11 @@
 @model ProductModel
 @{
-    ViewData["Title"] = "Xóa món ăn";
+    ViewData["Title"] = "Delete Product";
     @* var modelData = ViewData["modelData"] as MVC.Models.ProductModel; *@
 }
 <h1>@ViewData["Title"]</h1>
-<h3>Bạn có chắc chắn muốn xóa</h3>
 <div>
-    <h4>Món ăn</h4>
+    <h4>Food</h4>
     <hr>
     <dl class="row">
         <dt class="col-sm-2">
@@ -47,8 +46,7 @@
         </dd>
     </dl>
     <form method="post">
-        <button type="submit" class="btn btn-danger">Xóa</button>
-        <hr>
-        <a asp-action="index" class="btn btn-primary">Quay lại</a>
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="index" class="btn btn-warning">Back</a>
     </form>
 </div> 

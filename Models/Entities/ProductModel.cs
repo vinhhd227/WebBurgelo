@@ -21,6 +21,9 @@ public class ProductModel
     [Column("Price")]
     [Display(Name = "Price")]
     public int Price { set; get; }
+    [Column("Image")]
+    [Display(Name = "Image")]
+    public string? Image { set; get; }
     [Column("CategoryId")]
     [Display(Name = "CategoryId")]
     public int CategoryId { set; get; }

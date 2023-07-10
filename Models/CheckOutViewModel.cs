@@ -6,7 +6,7 @@ namespace WebBurgelo.Models;
 public class CheckOutModel
 {
     [Display(Name = "Name")]
-    public string UserName { set; get; }
+    public string CustomerName { set; get; }
 
     [Display(Name = "Address")]
     public string Address { set; get; }

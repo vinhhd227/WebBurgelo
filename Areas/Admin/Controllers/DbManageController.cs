@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebBurgelo.Models;
 
-namespace MVC.Areas_Admin_Controllers
+namespace WebBurgelo.Areas_Admin_Controllers
 {
     [Area("Admin")]
     [Route("/admin/database-manage/[action]")]
@@ -29,19 +29,19 @@ namespace MVC.Areas_Admin_Controllers
             return View();
         }
         [TempData]
-        public string StatusMessage { set; get; }
+        public string message { set; get; }
         [HttpPost]
         public async Task<IActionResult> DeleteDbAsync()
         {
             var success = await _dbContext.Database.EnsureDeletedAsync();
-            StatusMessage = success ? "Xóa Database thành công" : "Không thể xóa";
+            message = success ? "Database deleted" : "Can't delete database";
             return RedirectToAction(nameof(Index));
         }
         [HttpPost]
         public async Task<IActionResult> Migrate()
         {
             await _dbContext.Database.MigrateAsync();
-            StatusMessage = "Cập nhật Database thành công";
+            message = "Database update successfully";
             return RedirectToAction(nameof(Index));
         }
     }

@@ -16,9 +16,10 @@
         <form method="post" asp-controller="account" asp-action="registerconfirm">
             @if (@TempData["message"] != null)
             {
-                <div class="alert alert-danger">
+                <partial name="_DangerMessage"></partial>
+                @* <div class="alert alert-danger">
                     @TempData["message"]
-                </div>
+                </div> *@
             }
             <!-- User Name input -->
             <div class="form-outline mb-4">
@@ -35,12 +36,12 @@
             <!-- Password input -->
             <div class="form-outline mb-4">
                 <label asp-for="Password" class="form-label"></label>
-                <input asp-for="Password" class="form-control" type="password">
+                <input asp-for="Password" class="form-control">
                 <span asp-validation-for="Password" class="text text-danger d-block m-2"></span>
             </div>
             <div class="form-outline mb-4">
                 <label asp-for="PasswordConfirm" class="form-label"></label>
-                <input asp-for="PasswordConfirm" class="form-control" type="password">
+                <input asp-for="PasswordConfirm" class="form-control">
                 <span asp-validation-for="PasswordConfirm" class="text text-danger d-block m-2"></span>
             </div>
 
@@ -61,7 +62,7 @@
             </div>
             <!-- Submit button -->
             <div class="container d-flex justify-content-center">
-                <button type="submit" class="btn btn--yellow btn--hover btn-block m-auto">Register</button>
+                <button type="submit" class="btn btn--yellow btn--hover rounded-pill btn-block m-auto">Register</button>
             </div>
 
 

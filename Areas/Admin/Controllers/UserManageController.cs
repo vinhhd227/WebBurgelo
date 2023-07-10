@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebBurgelo.Models;
 
-namespace MVC.Areas_Admin_Controllers
+namespace WebBurgelo.Areas_Admin_Controllers
 {
 
     [Area("Admin")]
@@ -26,15 +26,49 @@ namespace MVC.Areas_Admin_Controllers
         }
         [TempData]
         string message { set; get; }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? roleid)
         {
             var user = await (from u in _burgeloContext.users where u.UserId == _accountService.GetAccountInfo().UserId select u).FirstOrDefaultAsync();
             if (user is not null)
             {
                 if (user.RoleId > 3)
                 {
-                    var users = await _burgeloContext.users.ToListAsync();
-                    return View(users);
+                    if (roleid == null)
+                    {
+                        var users = await _burgeloContext.users.ToListAsync();
+                        ViewData["user"] = "All";
+                        return View(users);
+                    }
+                    else
+                    {
+                        var users = await (from u in _burgeloContext.users where u.RoleId == roleid select u).ToListAsync();
+                        switch (roleid)
+                        {
+                            case 1:
+                                {
+                                    ViewData["user"] = "Unverify";
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    ViewData["user"] = "Customer";
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    ViewData["user"] = "Manager";
+                                    break;
+                                }
+                            case 4:
+                                {
+                                    ViewData["user"] = "Admin";
+                                    break;
+                                }
+
+                        }
+                        return View(users);
+                    }
+
                 }
             }
             return RedirectToAction(nameof(AccessDenied));

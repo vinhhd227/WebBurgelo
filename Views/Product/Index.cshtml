@@ -14,7 +14,7 @@
                         sb.Append(@Model.ProductName.ToLower().Replace(" ", "_")).Append(".png");
                         string imgName = sb.ToString();
                     }
-                    <img src="~/content/images/menu/@Model.category.CategoryName.ToLower()/@imgName"
+                    <img src="~/content/images/menu/@Model.category.CategoryName.ToLower()/@imgName?+@DateTime.Now.Ticks.ToString()"
                         class="card-img-top" alt="...">
                     <div class="d-lg-none">
                         <img src="" alt="">

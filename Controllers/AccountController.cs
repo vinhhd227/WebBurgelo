@@ -59,9 +59,9 @@ public class AccountController : Controller
                             Console.WriteLine("Login successfully");
                         }
                         {
-                            //Get Order Info
-                            var orders = await (from o in _burgeloContext.orders where o.UserId == account.UserId && o.DeliveryStatus < 2 select o).ToListAsync();
-                            _orderService.SaveOrderSession(orders);
+                            // Get order session
+                            var listOrder = await (from o in _burgeloContext.orders where o.UserId == account.UserId && o.ConfirmStatus != 2 && (o.Delivery.DeliveryStatus < 2 || o.Delivery.CustomerConfirm == 0) select o).ToListAsync();
+                            _orderService.SaveOrderSession(listOrder);
                         }
                         return RedirectToAction(nameof(LoginSuccess));
                     }
@@ -261,10 +261,13 @@ public class AccountController : Controller
     [Route("/registerconfirm")]
     public async Task<IActionResult> RegisterConfirm(RegisterModel registerModel)
     {
-        Console.WriteLine(registerModel.AccountName);
-        Console.WriteLine(registerModel.Email);
-        Console.WriteLine(registerModel.Password);
-        Console.WriteLine(registerModel.PasswordConfirm);
+        
+        // {
+        // Console.WriteLine(registerModel.AccountName);
+        // Console.WriteLine(registerModel.Email);
+        // Console.WriteLine(registerModel.Password);
+        // Console.WriteLine(registerModel.PasswordConfirm);
+        // }
         if (ModelState.IsValid)
         {
             Console.WriteLine("Model Oke");
@@ -282,12 +285,12 @@ public class AccountController : Controller
                 Console.WriteLine(message);
                 return RedirectToAction(nameof(Register), registerModel);
             }
-            if (registerModel.Password != registerModel.PasswordConfirm)
-            {
-                message = "Confirm password must match";
-                Console.WriteLine(message);
-                return RedirectToAction(nameof(Register), registerModel);
-            }
+            // if (registerModel.Password != registerModel.PasswordConfirm)
+            // {
+            //     message = "Confirm password must match";
+            //     Console.WriteLine(message);
+            //     return RedirectToAction(nameof(Register), registerModel);
+            // }
             Console.WriteLine("Pass Check");
             // Tạo ra user mới
             UserModel user = new UserModel();
@@ -351,7 +354,6 @@ public class AccountController : Controller
             Console.WriteLine(m);
             return View("Register", registerModel);
         }
-        return RedirectToAction(nameof(Register));
     }
 
     [Route("/user/userinfo")]

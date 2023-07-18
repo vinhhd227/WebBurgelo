@@ -132,9 +132,9 @@
                     </div>
                     <div class="product_meta d-flex flex-column mt-3">
                         <div><span class="product_meta--sku">SKU:</span>&nbsp;N/A</div>
-                        <div><span class="product_meta--category">Category: </span>&nbsp;<a href="">BURGERS</a></div>
-                        <div><span class="product_meta--sku--tag">Tag: </span>&nbsp;<a href="">burger</a>, <a
-                                href="">sale</a></div>
+                        <div><span class="product_meta--category">Category: </span>&nbsp;<a class="text-decoration-none" asp-controller="menu" asp-action="index" asp-route-categoryname="@Model.category.CategoryName.ToString().ToLower()">@Model.category.CategoryName</a></div>
+                        <div><span class="product_meta--sku--tag">Tag: </span>&nbsp;<a class="text-decoration-none" href="#">burger</a>, <a
+                                class="text-decoration-none" href="#">sale</a></div>
                     </div>
                     <h2 class="guaranteed">Guaranteed Safe Checkout</h2>
                     <img src="~/content/images/menu/momo.png" class="img-fluid" alt="">

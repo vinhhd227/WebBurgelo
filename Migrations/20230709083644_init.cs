@@ -265,7 +265,7 @@ namespace WebBurgelo.Migrations
                          values: new object[] {
                     "BBQ Burger",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
-                    15,
+                    17,
                     1
                          }
                      );
@@ -274,8 +274,8 @@ namespace WebBurgelo.Migrations
                         columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
                         values: new object[] {
                     "Black Burger",
-                    "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
-                    15,
+                    "The black burger bun is a brioche burger bun that can be made in various sizes and served in many ways. The feature that makes it so special is its black color which is something you do not expect to see when you think of burger buns. However, being black makes it an attractive centerpiece on your dining table. This burger bun is delicious besides its unappealing black color. Do not let it turn you down, they are as tasty as any other homemade burger bun. The color is the eye-catcher and it surely will not be missed at any gathering, no matter what food you want to serve with it.",
+                    19,
                     1
                         }
                     );
@@ -285,7 +285,7 @@ namespace WebBurgelo.Migrations
                 values: new object[] {
                     "Chicken Burger",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
-                    15,
+                    16,
                     1
                 }
             );
@@ -305,7 +305,7 @@ namespace WebBurgelo.Migrations
                 values: new object[] {
                     "Teriyaki Chicken Burger",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
-                    15,
+                    18,
                     1
                 }
             );
@@ -315,7 +315,7 @@ namespace WebBurgelo.Migrations
                 values: new object[] {
                     "Turkey Burger",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
-                    15,
+                    16,
                     1
                 }
             );
@@ -325,7 +325,7 @@ namespace WebBurgelo.Migrations
                          values: new object[] {
                     "Beacon Burger",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
-                    15,
+                    13,
                     1
                          }
                      );
@@ -335,7 +335,7 @@ namespace WebBurgelo.Migrations
                 values: new object[] {
                     "Texas Burger",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
-                    15,
+                    14,
                     1
                 }
             );
@@ -345,7 +345,7 @@ namespace WebBurgelo.Migrations
                 values: new object[] {
                     "Burger Combo",
                     "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
-                    15,
+                    25,
                     1
                 }
             );
@@ -734,7 +734,7 @@ namespace WebBurgelo.Migrations
                 columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
                 values: new object[] {
                     "Uramaki",
-                    "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
+                    "Uramaki is one of 5 traditional sushi rolls, or makizushi, in traditional Japanese cuisine. The meaning of its name is, literally, “inside out” roll. It could be defined as a “rebel roll” because it goes against the usual norm of wrapping the roll of rice from the outside.",
                     15,
                     6
                 }
@@ -744,7 +744,7 @@ namespace WebBurgelo.Migrations
                 columns: new[] { "ProductName", "Description", "Price", "CategoryId" },
                 values: new object[] {
                     "Califonia Maki",
-                    "These BBQ Burgers are an amazingly juicy explosion of sweet, tangy, spicy, smokey, crispy deliciousness all at the same time. They’re smothered in homemade BBQ sauce, sharp cheddar, salty bacon, crispy lettuce, juicy tomatoes and crispy onion strings.  Of course, all of the toppings are customizable to make it YOUR best burger recipe! I’ve included tips and tricks on how to cook burgers (grilled or stove top), how to make ahead and how to freeze and my secret to the JUICIEST burgers!",
+                    "California Roll or California Maki is a sushi roll that is made inside out. Crabstick, avocado, and cucumber are placed in the center of the nori while the flattened sushi rice with sesame seeds is on the opposite part. This is then rolled using a bamboo mat and pressed to maintain the shape.",
                     15,
                     6
                 }

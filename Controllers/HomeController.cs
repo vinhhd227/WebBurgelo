@@ -42,7 +42,7 @@ public class HomeController : Controller
         else
         {
             Console.WriteLine(SearchString);
-            var qr = from p in _burgeloContext.products where p.ProductName.ToLower().Contains(SearchString.ToLower()) select p;
+            var qr = from p in _burgeloContext.products where p.ProductName.ToLower().Contains(SearchString.ToLower()) || p.category.CategoryName.ToLower().Contains(SearchString.ToLower()) select p;
             if (qr.Count() == 0)
             {
                 ViewBag.status = 1;

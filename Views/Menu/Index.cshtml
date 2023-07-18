@@ -15,7 +15,7 @@
     </div>
     <!--Main-->
     <div class="container-fluid d-flex flex-column flex-md-row-reverse mt-3 ps-0 ps-xl-2 row" id="category_ctn">
-        <div class="col-lg-8 col-md-6 col-12">
+        <div class="col-lg-8 col-md-7 col-12">
             <div class="filter text-end my-2">
                 <select name="" id="">
                     <option value="">Default sorting</option>
@@ -26,7 +26,7 @@
                     <option value="">Sort by price: low to high</option>
                 </select>
             </div>
-            <div class="row row-cols-xl-3 row-cols-lg-2 row-cols-1 g-2">
+            <div class="row row-cols-xl-3 row-cols-lg-2 row-cols-md-2 row-cols-1 g-2">
                 <!---->
                     @foreach (var product in products)
                     {
@@ -56,7 +56,7 @@
         </div>
             @* <partial name="_Paging" model="@pagingModel" /> *@
     </div>
-    <div class="col-lg-4 col-md-6 col-12 position-sticky">
+    <div class="col-lg-4 col-md-5 col-12 position-sticky">
         <div class="evelator position-sticky">
             <partial name="_MenuEvelator" />
                 @* <div class="d-flex flex-column">

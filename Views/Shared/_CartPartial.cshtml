@@ -30,12 +30,9 @@
                     <div class="d-flex border-bottom align-items-center mt-2">
                         <div>
                             @{
-                                StringBuilder sb = new StringBuilder();
-                                sb.Append(@cartitem.product.ProductName.ToLower().Replace(" ", "_")).Append(".png");
-                                string imgName = sb.ToString();
+                                string url = Encoding.UTF8.GetString(Convert.FromBase64String(cartitem.product.Image));
                             }
-                            <img src="~/content/images/menu/@cartitem.product.category.CategoryName.ToLower()/@imgName"
-                                class="card-img-top" alt="...">
+                            <img src="~/@url?+@DateTime.Now.Ticks.ToString()" class="card-img-top" alt="@cartitem..product.ProductName">
                         </div>
                         <div>
                             <a class="food_link" asp-controller="product" asp-action="index"
@@ -67,7 +64,7 @@
     }
     else
     {
-         <li class="d-block drop_down">
+        <li class="d-block drop_down">
             <div class="cart px-2">
                 <a asp-controller="cart" asp-action="index" class="text-decoration-none">
                     <div class="d-flex align-items-center justify-content-center">
@@ -81,9 +78,9 @@
                     </div>
                 </a>
             </div>
-             <div class="dropdown_content position-absolute p-4" id="cart_dropdown">
+            <div class="dropdown_content position-absolute p-4" id="cart_dropdown">
                 No products in the cart.
-             </div>
+            </div>
         </li>
     }
 }

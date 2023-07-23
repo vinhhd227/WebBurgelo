@@ -126,7 +126,7 @@ public class CheckOutController : Controller
                 .SelectMany(v => v.Errors)
                 .Select(e => e.ErrorMessage));
             Console.WriteLine(message);
-            return View();
+            return View("Index");
         }
         return View();
     }

@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 public class AccountService
 {
-    // Key lưu chuỗi JSON cuae cart
+    // Key lưu chuỗi JSON cart
     public const string ACCOUNT = "account";
 
     private readonly IHttpContextAccessor _context;
@@ -14,7 +14,7 @@ public class AccountService
         _httpContext = context.HttpContext;
     }
 
-    // Lấy cart từ Session (danh sách CartItem)
+    // Lấy account từ Session (danh sách CartItem)
     public AccountModel GetAccountInfo()
     {
         var session = _httpContext.Session;

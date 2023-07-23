@@ -12,7 +12,7 @@ using WebBurgelo.Models;
 namespace WebBurgelo.Migrations
 {
     [DbContext(typeof(BurgeloContext))]
-    [Migration("20230709083644_init")]
+    [Migration("20230718085439_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -70,6 +70,24 @@ namespace WebBurgelo.Migrations
                     b.Property<string>("CategoryName")
                         .HasColumnType("nvarchar(max)")
                         .HasColumnName("CategoryName");
+
+                    b.Property<string>("CreateBy")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("CreateBy");
+
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("CreateDate");
+
+                    b.Property<string>("UpdateBy")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("UpdateBy");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("UpdateDate");
 
                     b.HasKey("CategoryId");
 
@@ -213,6 +231,15 @@ namespace WebBurgelo.Migrations
                         .HasColumnType("int")
                         .HasColumnName("CategoryId");
 
+                    b.Property<string>("CreateBy")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("CreateBy");
+
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("CreateDate");
+
                     b.Property<string>("Description")
                         .HasMaxLength(1000)
                         .HasColumnType("nvarchar(1000)")
@@ -231,6 +258,15 @@ namespace WebBurgelo.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)")
                         .HasColumnName("ProductName");
+
+                    b.Property<string>("UpdateBy")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("UpdateBy");
+
+                    b.Property<DateTime?>("UpdateDate")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("UpdateDate");
 
                     b.HasKey("ProductId");
 

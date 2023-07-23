@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace WebBurgelo.Models;
 
-[Table("VerifyEmail")]
+[Table("Verify Email")]
 public class VerifyEmailModel
 {
     [Key]

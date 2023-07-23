@@ -11,8 +11,8 @@ public class ProductModel
     public int ProductId { set; get; }
     [Column("ProductName")]
     [Display(Name = "Name")]
-    [Required(ErrorMessage = "Phải nhập {0}")]
-    [StringLength(50, MinimumLength = 3, ErrorMessage = "{0} phải có từ {2} đến {1} kí tự")]
+    [Required(ErrorMessage = "Must enter {0}")]
+    [StringLength(50, MinimumLength = 3, ErrorMessage = "{0} must have {2} to {1} characters")]
     public string? ProductName { set; get; }
     [StringLength(1000)]
     [Column("Description")]
@@ -27,6 +27,16 @@ public class ProductModel
     [Column("CategoryId")]
     [Display(Name = "CategoryId")]
     public int CategoryId { set; get; }
+    [Column("CreateBy")]
+    [StringLength(100)]
+    public string? CreateBy { set; get; }
+    [Column("CreateDate")]
+    public DateTime? CreateDate { set; get; }
+    [Column("UpdateBy")]
+    [StringLength(100)]
+    public string? UpdateBy { set; get; }
+    [Column("UpdateDate")]
+    public DateTime? UpdateDate { set; get; }
     //Foreign key
     [ForeignKey("CategoryId")]
     //[Required]

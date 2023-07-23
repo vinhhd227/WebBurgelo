@@ -47,8 +47,7 @@ namespace WebBurgelo.Areas_Admin_Controllers
                                 StringBuilder sb = new StringBuilder();
                                 sb.Append(item.ProductName.ToLower().Replace(" ", "_")).Append(".png");
                                 string imgName = sb.ToString();
-                                var qr = (from c in _burgeloContext.categories where c.CategoryId == item.CategoryId select c).FirstOrDefault();
-                                string ImageUrl = $"content/images/menu/{qr.CategoryName.ToLower()}/{imgName}";
+                                string ImageUrl = $"content/images/menu/{imgName}";
                                 byte[] imageArray = Encoding.ASCII.GetBytes(ImageUrl);
                                 string base64Image = Convert.ToBase64String(imageArray);
                                 item.Image = base64Image;
@@ -131,6 +130,7 @@ namespace WebBurgelo.Areas_Admin_Controllers
         [HttpPost]
         public async Task<IActionResult> Create(InputProductModel model) // [Bind("FileUpload")] IFormFile FileUpload
         {
+            var user = await (from u in _burgeloContext.users where u.UserId == _accountService.GetAccountInfo().UserId select u).FirstOrDefaultAsync();
             message = "";
             Console.WriteLine(ModelState.IsValid);
             if (ModelState.IsValid)
@@ -148,27 +148,30 @@ namespace WebBurgelo.Areas_Admin_Controllers
                         sb.Append(model.ProductName.ToLower().Replace(" ", "_")).Append(code).Append(".png");
                         string imgName = sb.ToString();
                         // Get Category name
-                        var qr = (from c in _burgeloContext.categories where c.CategoryId == model.CategoryId select c).FirstOrDefault();
+                        // var qr = (from c in _burgeloContext.categories where c.CategoryId == model.CategoryId select c).FirstOrDefault();
                         // Create filePath and coppy file to filePath
-                        var filePath = Path.Combine(_env.WebRootPath, "content", "images", "menu", qr.CategoryName, imgName);
+                        var filePath = Path.Combine(_env.WebRootPath, "content", "images", "menu", imgName);
                         using var fileStream = new FileStream(filePath, FileMode.Create);
                         model.FileUpload.CopyTo(fileStream);
                         // Create Image Url
-                        string ImageUrl = $"content/images/menu/{qr.CategoryName.ToLower()}/{imgName}";
+                        string ImageUrl = $"content/images/menu/{imgName}";
                         byte[] imageArray = Encoding.ASCII.GetBytes(ImageUrl);
                         base64Image = Convert.ToBase64String(imageArray);
-                        // using (var ms = new MemoryStream())
-                        // {
-                        //     model.FileUpload.CopyTo(ms);
-                        //     var fileBytes = ms.ToArray();
-                        //     base64Image = Convert.ToBase64String(fileBytes);
-                        //     // act on the Base64 data
-                        // }
-                        // Console.WriteLine(base64Image);
-                        // byte[] imageArray = model.FileUpload.FileBytes()
-                        // System.IO.File.ReadAllBytes(System.IO.Path.GetDirectoryName(model.FileUpload.FileName));
-                        // base64Image = Convert.ToBase64String(imageArray);
-                        //System.IO.File.WriteAllBytes(filePath, Convert.FromBase64String(base64Image));
+                        //Test
+                        {
+                            // using (var ms = new MemoryStream())
+                            // {
+                            //     model.FileUpload.CopyTo(ms);
+                            //     var fileBytes = ms.ToArray();
+                            //     base64Image = Convert.ToBase64String(fileBytes);
+                            //     // act on the Base64 data
+                            // }
+                            // Console.WriteLine(base64Image);
+                            // byte[] imageArray = model.FileUpload.FileBytes()
+                            // System.IO.File.ReadAllBytes(System.IO.Path.GetDirectoryName(model.FileUpload.FileName));
+                            // base64Image = Convert.ToBase64String(imageArray);
+                            //System.IO.File.WriteAllBytes(filePath, Convert.FromBase64String(base64Image));
+                        }
                     }
                     catch (Exception e)
                     {
@@ -180,7 +183,9 @@ namespace WebBurgelo.Areas_Admin_Controllers
                         Description = model.Description,
                         Price = model.Price,
                         Image = base64Image,
-                        CategoryId = model.CategoryId
+                        CategoryId = model.CategoryId,
+                        CreateBy = user.UserName,
+                        CreateDate = DateTime.Now
                     };
                     _burgeloContext.products.Add(product);
                     await _burgeloContext.SaveChangesAsync();
@@ -202,7 +207,15 @@ namespace WebBurgelo.Areas_Admin_Controllers
             var product = (from p in _burgeloContext.products where p.ProductId == id select p).FirstOrDefault();
             if (product != null)
             {
-                return View(product);
+                InputProductModel model = new InputProductModel()
+                {
+                    ProductId = product.ProductId,
+                    ProductName = product.ProductName,
+                    Price = product.Price,
+                    Description = product.Description,
+                    CategoryId = product.CategoryId
+                };
+                return View(model);
             }
             else
             {
@@ -212,6 +225,7 @@ namespace WebBurgelo.Areas_Admin_Controllers
         [HttpPost("/admin-manage/product-manage/update/{id}"), ActionName("Update")]
         public async Task<IActionResult> Update(InputProductModel model)
         {
+            var user = await (from u in _burgeloContext.users where u.UserId == _accountService.GetAccountInfo().UserId select u).FirstOrDefaultAsync();
             message = "";
             Console.WriteLine(ModelState.IsValid);
             if (ModelState.IsValid)
@@ -229,13 +243,13 @@ namespace WebBurgelo.Areas_Admin_Controllers
                         sb.Append(model.ProductName.ToLower().Replace(" ", "_")).Append(code).Append(".png");
                         string imgName = sb.ToString();
                         // Get Category name
-                        var qr = (from c in _burgeloContext.categories where c.CategoryId == model.CategoryId select c).FirstOrDefault();
+                        // var qr = (from c in _burgeloContext.categories where c.CategoryId == model.CategoryId select c).FirstOrDefault();
                         // Create filePath 
-                        var filePath = Path.Combine(_env.WebRootPath, "content", "images", "menu", qr.CategoryName, imgName);
+                        var filePath = Path.Combine(_env.WebRootPath, "content", "images", "menu", imgName);
                         using var fileStream = new FileStream(filePath, FileMode.Create);
                         model.FileUpload.CopyTo(fileStream);
                         // Create Image Url
-                        string ImageUrl = $"content/images/menu/{qr.CategoryName.ToLower()}/{imgName}";
+                        string ImageUrl = $"content/images/menu/{imgName}";
                         byte[] imageArray = Encoding.ASCII.GetBytes(ImageUrl);
                         base64Image = Convert.ToBase64String(imageArray);
                     }
@@ -259,6 +273,8 @@ namespace WebBurgelo.Areas_Admin_Controllers
                     }
                     product.Price = model.Price;
                     product.CategoryId = model.CategoryId;
+                    product.UpdateBy = user.UserName;
+                    product.UpdateDate = DateTime.Now;
                     _burgeloContext.products.Update(product);
                     await _burgeloContext.SaveChangesAsync();
                     message = "Update Successful";

@@ -6,8 +6,16 @@
   decimal total = 0;
   <div class="container-xxl  mt-3 pb-5 align-items-center pe-1" id="cart_ctn">
     <h2 class="text-center">Cart</h2>
-    <div class="d-flex w-100 flex-column flex-lg-row">
-      <div class="left">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="text-decoration-none" asp-controller="home"
+            asp-action="index"><span>Home</span></a></li>
+        <li class="breadcrumb-item"><a class="text-decoration-none" asp-action="index"
+            asp-controller="cart"><span>Cart</span></a></li>
+      </ol>
+    </nav>
+    <div class="row gx-lg-5 gy-3 gx-0">
+      <div class="left col-lg-9 col-12">
         <table class="table">
           <tr>
             <th></th>
@@ -25,17 +33,17 @@
             <tr>
               <td><a asp-controller="cart" asp-action="removecart" asp-route-productid="@cartitem.product.ProductId"
                   style="font-size: 20px; font-weight: bold;">&nbsp;&#215;&nbsp;</a></td>
-              <td>@{
-                  StringBuilder sb = new StringBuilder();
-                  sb.Append(@cartitem.product.ProductName.ToLower().Replace(" ", "_")).Append(".png");
-                  string imgName = sb.ToString();
+              <td>
+                @{
+                  string url = Encoding.UTF8.GetString(Convert.FromBase64String(cartitem.product.Image));
                 }
-                <img src="~/content/images/menu/@cartitem.product.category.CategoryName.ToLower()/@imgName?+@DateTime.Now.Ticks.ToString()" class="card-img-top"
-                  alt="...">
+                <img src="~/@url" class="img-thumbnail" class="card-img-top" alt="...">
               </td>
-              <td><a asp-controller="product" asp-action="index" asp-route-productid="@cartitem.product.ProductId">@cartitem.product.ProductName</a></td>
+              <td><a asp-controller="product" asp-action="index"
+                  asp-route-productid="@cartitem.product.ProductId">@cartitem.product.ProductName</a></td>
               <td>$@(cartitem.product.Price.ToString("n0"))</td>
-              <td><input asp-for="@cartitem.quantity" id="@($"quantity-{cartitem.product.ProductId}")" min=1 class="focus--shadow rounded-pill border-1 border" /></td>
+              <td><input asp-for="@cartitem.quantity" id="@($"quantity-{cartitem.product.ProductId}")" min=1
+                  class="focus--shadow rounded-pill border-1 border" /></td>
               <td>@(thanhtien.ToString("n0"))</td>
               <td>
                 <button class="btn btn-success updatecartitem" data-productid="@cartitem.product.ProductId"
@@ -49,7 +57,7 @@
           </tr>
         </table>
       </div>
-      <div class="right border-1 border d-flex flex-column">
+      <div class="right col-lg-3 col-12 border-1 border d-flex flex-column">
         <h2 class="my-3">CART TOTALS</h2>
         <table>
           <tr>
@@ -61,7 +69,8 @@
             <td class="total_price">$@(total.ToString("n0"))</td>
           </tr>
         </table>
-        <a class="p-3" asp-controller="checkout" asp-action="index"><i class="fa-solid fa-check">&nbsp;</i>PROCEED TO CHECKOUT</a>
+        <a class="p-3" asp-controller="checkout" asp-action="index"><i class="fa-solid fa-check">&nbsp;</i>PROCEED TO
+          CHECKOUT</a>
       </div>
     </div>
   </div>

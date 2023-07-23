@@ -244,13 +244,10 @@
                             <div class="col slick_item_ctn">
                                 <div class="card slick_item">
                                     @{
-                                    StringBuilder sb = new StringBuilder();
-                                    sb.Append(@product.ProductName.ToLower().Replace(" ", "_")).Append(".png");
-                                    string imgName = sb.ToString();
+                                    string url = Encoding.UTF8.GetString(Convert.FromBase64String(product.Image));
                                     }
                                     <a asp-controller="product" asp-action="index" asp-route-productid="@product.ProductId">
-                                   <img src="~/content/images/menu/@product.category.CategoryName.ToLower()/@imgName?+@DateTime.Now.Ticks.ToString()"  class="card-img-top"
-                                        alt="...">
+                                    <img src="~/@url?+@DateTime.Now.Ticks.ToString()" class="card-img-top" alt="@product.ProductName">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title ps-0"><a class="card-title__link text-decoration-none text-truncate" asp-controller="product" asp-action="index" asp-route-productid="@product.ProductId"><span>@product.ProductName</span></a></h5>

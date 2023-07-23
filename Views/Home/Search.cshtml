@@ -48,14 +48,11 @@
                     <!---->
                     @foreach (var product in Model)
                     {
-                        StringBuilder sb = new StringBuilder();
-                        sb.Append(@product.ProductName.ToLower().Replace(" ", "_")).Append(".png");
-                        string imgName = sb.ToString();
+                         string url = Encoding.UTF8.GetString(Convert.FromBase64String(product.Image));
                         <div class="col">
                             <div class="card">
                                 <a asp-controller="product" asp-action="index" asp-route-productid="@product.ProductId">
-                                    <img src="~/content/images/menu/@product.category.CategoryName.ToLower()/@imgName?+@DateTime.Now.Ticks.ToString()"
-                                        class="card-img-top" alt="...">
+                                    <img src="~/@url?+@DateTime.Now.Ticks.ToString()" class="card-img-top" alt="@product.ProductName">
                                 </a>
                                 <div class="card-body">
                                     <h5 class="card-title text-truncate"><a asp-controller="product" asp-action="index"

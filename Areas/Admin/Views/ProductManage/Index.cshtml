@@ -56,22 +56,23 @@
 <table class="table table-striped table-bordered">
     <thead class="rol">
         <tr class="text-center align-middle">
-            <th class="col-1">
+            <th class="col">
                 @Html.DisplayNameFor(model =>model.ProductName)
             </th>
-            <th class="col-2">
+            <th class="col">
                 @Html.DisplayNameFor(model =>model.category.CategoryName)
             </th>
-            <th class="col-2">
+            <th class="col">
                 Picture
             </th>
-            <th class="col-4">
+            <th class="col-3">
                 @Html.DisplayNameFor(model =>model.Description)
             </th>
-            <th class="col-1">
+            <th class="col">
                 @Html.DisplayNameFor(model =>model.Price)
             </th>
-            <th class="col-2"></th>
+            <th class="col">Create/Update</th>
+            <th class="col"></th>
         </tr>
     </thead>
     <tbody>
@@ -86,22 +87,27 @@
                 </td>
                 <td>
                     @{
-                        StringBuilder sb = new StringBuilder();
-                        sb.Append(@item.ProductName.ToLower().Replace(" ", "_")).Append(".png");
-                        string imgName = sb.ToString();
                         string url = Encoding.UTF8.GetString(Convert.FromBase64String(item.Image));
-                        Console.WriteLine(url);
                     }
-                    @* <img src="~/content/images/menu/@item.category.CategoryName.ToLower()/@imgName" class="img-thumbnail"
-                        alt="ảnh" width="200" height="200"> *@
-                    <img src="~/@url" class="img-thumbnail"
-                        alt="ảnh" width="200" height="200">
+                    <img src="~/@url" class="img-thumbnail" alt="ảnh" width="200" height="200">
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Description)
                 </td>
                 <td class="text-center align-middle">
                     @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td class="text-center align-middle">
+                    @{
+                        <p>Create by: @item.CreateBy</p>
+                        <p>Create Time: @item.CreateDate</p>
+                        <hr>
+                        if (item.UpdateBy != null)
+                        {
+                            <p>Last Update by: @item.UpdateBy</p>
+                            <p>Last Update Time: @item.UpdateDate</p>
+                        }
+                    }
                 </td>
                 <td class="text-center align-middle">
                     <a class="btn btn-success" asp-area="Admin" asp-controller="ProDuctManage" asp-action="Read"

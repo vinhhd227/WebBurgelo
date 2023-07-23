@@ -19,17 +19,17 @@
                     <h3>Billing details</h3>
                     <div class="form-outline mb-4">
                         <label asp-for="CustomerName" class="form-label"></label>
-                        <input asp-for="CustomerName" class="form-control text--subfont">
+                        <input asp-for="CustomerName" class="form-control text--subfont" required>
                         <span asp-validation-for="CustomerName" class="text text-danger d-block m-2"></span>
                     </div>
                     <div class="form-outline mb-4">
                         <label asp-for="Address" class="form-label"></label>
-                        <input asp-for="Address" class="form-control text--subfont">
+                        <input asp-for="Address" class="form-control text--subfont" required>
                         <span asp-validation-for="Address" class="text text-danger d-block m-2"></span>
                     </div>
                     <div class="form-outline mb-4">
                         <label asp-for="PhoneNumber" class="form-label"></label>
-                        <input asp-for="PhoneNumber" class="form-control text--subfont">
+                        <input asp-for="PhoneNumber" class="form-control text--subfont" required>
                         <span asp-validation-for="PhoneNumber" class="text text-danger d-block m-2"></span>
                     </div>
                     @{

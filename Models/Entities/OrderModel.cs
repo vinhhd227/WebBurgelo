@@ -12,6 +12,7 @@ public class OrderModel
     public int OrderId { set; get; }
     [Column("OrderCode")]
     [Display(Name = "OrderCode")]
+    [StringLength(9)]
     public string OrderCode { set; get; }
     [Column("UserId")]
     [Display(Name = "User Id")]

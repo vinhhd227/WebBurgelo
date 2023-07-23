@@ -55,6 +55,8 @@ public class AccountController : Controller
                         {
                             // Login
                             loggedAccount = account;
+                            // var user = await _burgeloContext.users.FindAsync(account.UserId);
+                            // account.user = user;
                             _accountService.SaveAccountSession(loggedAccount);
                             Console.WriteLine("Login successfully");
                         }
@@ -261,7 +263,7 @@ public class AccountController : Controller
     [Route("/registerconfirm")]
     public async Task<IActionResult> RegisterConfirm(RegisterModel registerModel)
     {
-        
+
         // {
         // Console.WriteLine(registerModel.AccountName);
         // Console.WriteLine(registerModel.Email);
@@ -303,6 +305,14 @@ public class AccountController : Controller
             user.PhoneNumber = "";
             try
             {
+                var qr = (from e in _burgeloContext.subscribes where e.Email == registerModel.Email select e).FirstOrDefault();
+                if (qr == null)
+                {
+                    _burgeloContext.subscribes.Add(new SubscribeModel()
+                    {
+                        Email = registerModel.Email
+                    });
+                }
                 _burgeloContext.users.Add(user);
                 await _burgeloContext.SaveChangesAsync();
                 Console.WriteLine("User created");

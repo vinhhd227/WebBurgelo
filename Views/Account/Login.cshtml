@@ -18,13 +18,13 @@
             {
                 <partial name="_DangerMessage"></partial>
                 @* <div class="alert alert-danger">
-                    @TempData["message"]
-                </div> *@
+            @TempData["message"]
+            </div> *@
             }
             <!-- User Name input -->
             <div class="form-outline mb-4">
                 <label asp-for="AccountName" class="form-label"></label>
-                <input asp-for="AccountName" class="form-control text--subfont" >
+                <input asp-for="AccountName" class="form-control text--subfont">
                 <span asp-validation-for="AccountName" class="text text-danger d-block m-2"></span>
             </div>
             <!-- Password input -->
@@ -37,16 +37,18 @@
             <div class="row mb-4">
                 <div class="col">
                     <!-- Simple link -->
-                    <a asp-controller="account" asp-action="forgotpassword" class="text-decoration-none">Forgot password?</a>
+                    <a asp-controller="account" asp-action="forgotpassword" class="text-decoration-none">Forgot
+                        password?</a>
                 </div>
             </div>
-            <!-- Submit button --> 
+            <!-- Submit button -->
             <div class="container d-flex justify-content-center">
                 <button type="submit" class="btn btn--yellow btn--hover rounded-pill btn-block m-auto">Sign in</button>
             </div>
             <!-- Register buttons -->
             <div class="text-center">
-                <p class="m-3">Not a member? <a asp-controller="account" asp-action="toregister" class="text-decoration-none">Register</a>
+                <p class="m-3">Not a member? <a asp-controller="account" asp-action="toregister"
+                        class="text-decoration-none">Register</a>
                 </p>
                 @* <p>or sign up with:</p>
                 <button type="button" class="btn btn-link btn-floating mx-1">

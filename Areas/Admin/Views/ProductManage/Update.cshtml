@@ -1,4 +1,4 @@
-@model ProductModel
+@model InputProductModel
 <h1>Update Product Info</h1>
 @using (Html.BeginForm("Update", "ProductManage", FormMethod.Post,
 new { enctype = "multipart/form-data" }))
@@ -27,7 +27,7 @@ new { enctype = "multipart/form-data" }))
     <label for="FileUpload" class="form-label">Picture</label>
     <input type="file" name="FileUpload" id="FileUpload" class="form-control">
   </div>
-  <div class="mb-3 d-none">
+  <div class="mb-3">
     <label asp-for="CategoryId" class="form-label">Category</label>
     <select class="form-select" asp-for="CategoryId">
       <option value="1">Burgers</option>

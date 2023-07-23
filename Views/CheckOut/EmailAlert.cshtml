@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col"> <img src="~/content/images/checkout/verify_email.png" class="img-fluid" alt=""></div>
     </div>
-    <p class="alert alert-warning text--subfont">Please verify your email first</p>
+    <p class="alert alert-warning text--subfont">Please <a asp-controller="Account" asp-action="VerifyEmailSendMail" class="text--subfont text-decoration-none">verify your email</a> first</p>
     @* <br>
     <a class="text-center text-decoration-none border p-3" asp-controller="home" asp-action="index"><span class="text--subfont">Click here to continue...</span></a> *@
 </div>

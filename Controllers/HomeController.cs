@@ -7,20 +7,23 @@ namespace WebBurgelo.Controllers;
 [Route("/[action]")]
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-    private readonly IWebHostEnvironment _env;
+    //private readonly ILogger<HomeController> _logger;
     private readonly BurgeloContext _burgeloContext;
 
-    public HomeController(ILogger<HomeController> logger, IWebHostEnvironment env, BurgeloContext burgeloContext)
+    public HomeController(BurgeloContext burgeloContext)
     {
-        _logger = logger;
-        _env = env;
+        //_logger = logger;
         _burgeloContext = burgeloContext;
     }
     [Route("/")]
     [HttpGet]
     public async Task<IActionResult> Index()
     {
+        Console.WriteLine("Hello");
+        if (!_burgeloContext.Database.CanConnect())
+        {
+            await _burgeloContext.Database.MigrateAsync();
+        }
         HomeModel model = new HomeModel();
         model.categories = await _burgeloContext.categories.ToListAsync();
         model.products = await _burgeloContext.products.ToListAsync();
@@ -29,6 +32,7 @@ public class HomeController : Controller
             return View(model);
         }
         return RedirectToAction(nameof(Error));
+
     }
     [Route("/search")]
     [HttpGet]

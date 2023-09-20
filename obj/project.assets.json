@@ -4228,11 +4228,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\WebBurgelo\\WebBurgelo\\WebBurgelo.csproj",
+      "projectUniqueName": "D:\\Project\\WebBurgelo\\WebBurgelo.csproj",
       "projectName": "WebBurgelo",
-      "projectPath": "D:\\WebBurgelo\\WebBurgelo\\WebBurgelo.csproj",
+      "projectPath": "D:\\Project\\WebBurgelo\\WebBurgelo.csproj",
       "packagesPath": "C:\\Users\\hunte\\.nuget\\packages\\",
-      "outputPath": "D:\\WebBurgelo\\WebBurgelo\\obj\\",
+      "outputPath": "D:\\Project\\WebBurgelo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hunte\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4321,7 +4321,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

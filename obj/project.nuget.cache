@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Eq8FbBPTW6Y3IG+16MySh7yVt1z/pPCFWGfrA68ePZ4wXYp3AHsDXWNeC2UHv6mFCUCsd1u2BrU74CkYCXLQsg==",
+  "dgSpecHash": "fCKLD7ppnwiPncSVQ7KMoZwAgzrWDXvBS2iSfciMCSYXiQdp0SxeCUI50HphJBIVQNDN1/7jl5rNt/O6uU+BMA==",
   "success": true,
-  "projectFilePath": "D:\\WebBurgelo\\WebBurgelo\\WebBurgelo.csproj",
+  "projectFilePath": "D:\\Project\\WebBurgelo\\WebBurgelo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hunte\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\hunte\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,983 +1,983 @@
 {
   "Files": [
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebBurgelo.bundle.scp.css",
+      "Id": "D:\\Project\\WebBurgelo\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\WebBurgelo.bundle.scp.css",
       "PackagePath": "staticwebassets\\WebBurgelo.bundle.scp.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\Group.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\Group.svg",
       "PackagePath": "staticwebassets\\content\\images\\Group.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\checkout\\login.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\checkout\\login.png",
       "PackagePath": "staticwebassets\\content\\images\\checkout\\login.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\checkout\\momo_qr.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\checkout\\momo_qr.png",
       "PackagePath": "staticwebassets\\content\\images\\checkout\\momo_qr.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\checkout\\momo_qr.webp",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\checkout\\momo_qr.webp",
       "PackagePath": "staticwebassets\\content\\images\\checkout\\momo_qr.webp"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\checkout\\order_confirm.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\checkout\\order_confirm.png",
       "PackagePath": "staticwebassets\\content\\images\\checkout\\order_confirm.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\checkout\\verify_email.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\checkout\\verify_email.png",
       "PackagePath": "staticwebassets\\content\\images\\checkout\\verify_email.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\coffe.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\coffe.png",
       "PackagePath": "staticwebassets\\content\\images\\coffe.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\error\\404.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\error\\404.png",
       "PackagePath": "staticwebassets\\content\\images\\error\\404.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\error\\access_denied.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\error\\access_denied.png",
       "PackagePath": "staticwebassets\\content\\images\\error\\access_denied.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\free.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\free.png",
       "PackagePath": "staticwebassets\\content\\images\\free.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\about\\About.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\about\\About.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\about\\About.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\about\\icon\\fav1.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\about\\icon\\fav1.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\about\\icon\\fav1.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\about\\icon\\fav2.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\about\\icon\\fav2.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\about\\icon\\fav2.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\about\\icon\\fav3.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\about\\icon\\fav3.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\about\\icon\\fav3.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\banner\\Banner.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\banner\\Banner.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\banner\\Banner.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\banner\\food.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\banner\\food.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\banner\\food.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\Vector-2.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\Vector-2.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\delivery\\Vector-2.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\Vector-4.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\Vector-4.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\delivery\\Vector-4.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\choose.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\choose.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\delivery\\choose.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\icon\\fav4.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\icon\\fav4.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\delivery\\icon\\fav4.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\icon\\fav5.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\icon\\fav5.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\delivery\\icon\\fav5.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\icon\\fav6.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\icon\\fav6.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\delivery\\icon\\fav6.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\order.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\order.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\delivery\\order.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\receive.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\delivery\\receive.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\delivery\\receive.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\Frame-1.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\Frame-1.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\evelator\\Frame-1.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\Frame-2.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\Frame-2.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\evelator\\Frame-2.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\Frame-3.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\Frame-3.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\evelator\\Frame-3.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\Frame.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\Frame.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\evelator\\Frame.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\Group-1.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\Group-1.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\evelator\\Group-1.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\Group-2.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\Group-2.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\evelator\\Group-2.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\burger.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\burger.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\evelator\\burger.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\drinks.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\drinks.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\evelator\\drinks.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\pasta.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\pasta.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\evelator\\pasta.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\pizza.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\pizza.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\evelator\\pizza.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\soup.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\soup.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\evelator\\soup.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\sushi.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\evelator\\sushi.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\evelator\\sushi.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\food\\burgers.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\food\\burgers.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\food\\burgers.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\food\\drinks.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\food\\drinks.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\food\\drinks.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\food\\pasta.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\food\\pasta.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\food\\pasta.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\food\\pizza.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\food\\pizza.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\food\\pizza.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\food\\soup.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\food\\soup.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\food\\soup.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\food\\sushi.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\food\\sushi.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\food\\sushi.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\promotion\\15-off.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\promotion\\15-off.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\promotion\\15-off.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\promotion\\happy.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\promotion\\happy.svg",
       "PackagePath": "staticwebassets\\content\\images\\home\\promotion\\happy.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\promotion\\left.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\promotion\\left.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\promotion\\left.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\promotion\\main.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\promotion\\main.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\promotion\\main.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\promotion\\right.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\promotion\\right.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\promotion\\right.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\subscribe\\subscribe_success.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\subscribe\\subscribe_success.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\subscribe\\subscribe_success.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\trending\\beef_classic_burger.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\trending\\beef_classic_burger.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\trending\\beef_classic_burger.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\trending\\califonia_maki.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\trending\\califonia_maki.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\trending\\califonia_maki.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\trending\\season_soup.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\trending\\season_soup.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\trending\\season_soup.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\home\\trending\\the_best_pasta.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\home\\trending\\the_best_pasta.png",
       "PackagePath": "staticwebassets\\content\\images\\home\\trending\\the_best_pasta.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\burger_combo.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\burger_combo.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\burger_combo.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\chicken_burger.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\chicken_burger.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\chicken_burger.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\chicken_pasta.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\chicken_pasta.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\chicken_pasta.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\coke.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\coke.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\coke.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\lemon_tea.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\lemon_tea.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\lemon_tea.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\philadelphia_maki.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\philadelphia_maki.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\philadelphia_maki.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\sausage_pizza.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\sausage_pizza.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\sausage_pizza.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\season_soup.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\contact\\season_soup.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\contact\\season_soup.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\logo-burgelo.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\logo-burgelo.svg",
       "PackagePath": "staticwebassets\\content\\images\\layout\\logo-burgelo.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\burger.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\burger.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\navigation\\menu\\burger.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\coffe.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\coffe.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\navigation\\menu\\coffe.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\drinks.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\drinks.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\navigation\\menu\\drinks.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\pasta.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\pasta.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\navigation\\menu\\pasta.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\pizza.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\pizza.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\navigation\\menu\\pizza.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\soup.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\soup.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\navigation\\menu\\soup.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\sushi.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\layout\\navigation\\menu\\sushi.png",
       "PackagePath": "staticwebassets\\content\\images\\layout\\navigation\\menu\\sushi.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\login-banner.jpg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\login-banner.jpg",
       "PackagePath": "staticwebassets\\content\\images\\login-banner.jpg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu.png",
       "PackagePath": "staticwebassets\\content\\images\\menu.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\banana_juice.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\banana_juice.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\banana_juice.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\bbq_burger.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\bbq_burger.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\bbq_burger.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\bbq_burger_2.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\bbq_burger_2.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\bbq_burger_2.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\beacon_burger.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\beacon_burger.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\beacon_burger.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\beacon_pasta.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\beacon_pasta.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\beacon_pasta.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\beacon_pizza.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\beacon_pizza.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\beacon_pizza.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\black_burger.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\black_burger.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\black_burger.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\blue_curacao_soda.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\blue_curacao_soda.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\blue_curacao_soda.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\bologness_pasta.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\bologness_pasta.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\bologness_pasta.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\burger_combo.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\burger_combo.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\burger_combo.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\califonia_maki.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\califonia_maki.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\califonia_maki.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\carrot_juice.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\carrot_juice.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\carrot_juice.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\chicken_burger.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\chicken_burger.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\chicken_burger.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\chicken_pasta.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\chicken_pasta.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\chicken_pasta.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\chicken_soup.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\chicken_soup.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\chicken_soup.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\chinese_noodles_pasta.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\chinese_noodles_pasta.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\chinese_noodles_pasta.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\coffe.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\coffe.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\coffe.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\coke.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\coke.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\coke.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\crab_soup.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\crab_soup.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\crab_soup.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\fried_umaki.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\fried_umaki.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\fried_umaki.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\green_thai_chicken.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\green_thai_chicken.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\green_thai_chicken.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\hangover_soup.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\hangover_soup.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\hangover_soup.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\hot_cacao.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\hot_cacao.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\hot_cacao.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\hot_soup.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\hot_soup.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\hot_soup.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\kebab_pizza.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\kebab_pizza.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\kebab_pizza.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\lemon_tea.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\lemon_tea.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\lemon_tea.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\margherita_pizza.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\margherita_pizza.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\margherita_pizza.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\masago.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\masago.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\masago.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\meat_soup.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\meat_soup.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\meat_soup.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\meat_spaghetti.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\meat_spaghetti.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\meat_spaghetti.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\menu\\Frame-1-1.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\menu\\Frame-1-1.svg",
       "PackagePath": "staticwebassets\\content\\images\\menu\\menu\\Frame-1-1.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\menu\\Frame-4.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\menu\\Frame-4.svg",
       "PackagePath": "staticwebassets\\content\\images\\menu\\menu\\Frame-4.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\menu\\svg1.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\menu\\svg1.svg",
       "PackagePath": "staticwebassets\\content\\images\\menu\\menu\\svg1.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\menu\\svg2.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\menu\\svg2.svg",
       "PackagePath": "staticwebassets\\content\\images\\menu\\menu\\svg2.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\menu\\svg3.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\menu\\svg3.svg",
       "PackagePath": "staticwebassets\\content\\images\\menu\\menu\\svg3.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\menu\\svg4.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\menu\\svg4.svg",
       "PackagePath": "staticwebassets\\content\\images\\menu\\menu\\svg4.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\momo.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\momo.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\momo.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\mushroom_pizza.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\mushroom_pizza.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\mushroom_pizza.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\orange_juice.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\orange_juice.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\orange_juice.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\pasta_neo.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\pasta_neo.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\pasta_neo.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\pepperoni_pizza.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\pepperoni_pizza.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\pepperoni_pizza.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\philadelphia_maki.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\philadelphia_maki.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\philadelphia_maki.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\phomai_pasta.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\phomai_pasta.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\phomai_pasta.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\pumpkin_soup.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\pumpkin_soup.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\pumpkin_soup.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\ratatouille_soup.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\ratatouille_soup.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\ratatouille_soup.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\sake.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\sake.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\sake.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\salad_pasta.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\salad_pasta.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\salad_pasta.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\sashimi.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\sashimi.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\sashimi.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\sausage_pizza.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\sausage_pizza.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\sausage_pizza.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\sea_food_noodles.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\sea_food_noodles.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\sea_food_noodles.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\sea_food_pizza.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\sea_food_pizza.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\sea_food_pizza.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\season_soup.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\season_soup.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\season_soup.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\smoked_meat_burger.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\smoked_meat_burger.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\smoked_meat_burger.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\smoothie_milkshake.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\smoothie_milkshake.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\smoothie_milkshake.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\sushi_combo.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\sushi_combo.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\sushi_combo.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\temaki.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\temaki.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\temaki.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\teriyaki_chicken_burger.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\teriyaki_chicken_burger.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\teriyaki_chicken_burger.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\texas_burger.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\texas_burger.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\texas_burger.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\tomato_pasta.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\tomato_pasta.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\tomato_pasta.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\tomato_pizza.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\tomato_pizza.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\tomato_pizza.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\turkey_burger.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\turkey_burger.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\turkey_burger.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\unknow_pizza.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\unknow_pizza.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\unknow_pizza.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\uramaki.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\uramaki.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\uramaki.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\vegetable_pizza.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\vegetable_pizza.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\vegetable_pizza.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\menu\\wellness_soup.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\menu\\wellness_soup.png",
       "PackagePath": "staticwebassets\\content\\images\\menu\\wellness_soup.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\user\\4957412_Mobile-login-Cristina.jpg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\user\\4957412_Mobile-login-Cristina.jpg",
       "PackagePath": "staticwebassets\\content\\images\\user\\4957412_Mobile-login-Cristina.jpg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\user\\avatar.jpg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\user\\avatar.jpg",
       "PackagePath": "staticwebassets\\content\\images\\user\\avatar.jpg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\user\\changedeliveryinfo.jpg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\user\\changedeliveryinfo.jpg",
       "PackagePath": "staticwebassets\\content\\images\\user\\changedeliveryinfo.jpg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\user\\changeemail.jpg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\user\\changeemail.jpg",
       "PackagePath": "staticwebassets\\content\\images\\user\\changeemail.jpg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\user\\changepassword.jpg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\user\\changepassword.jpg",
       "PackagePath": "staticwebassets\\content\\images\\user\\changepassword.jpg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\user\\changeuserinfo.jpg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\user\\changeuserinfo.jpg",
       "PackagePath": "staticwebassets\\content\\images\\user\\changeuserinfo.jpg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\user\\error.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\user\\error.png",
       "PackagePath": "staticwebassets\\content\\images\\user\\error.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\user\\forgot_password.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\user\\forgot_password.png",
       "PackagePath": "staticwebassets\\content\\images\\user\\forgot_password.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\user\\login_success.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\user\\login_success.png",
       "PackagePath": "staticwebassets\\content\\images\\user\\login_success.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\user\\logout_success.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\user\\logout_success.png",
       "PackagePath": "staticwebassets\\content\\images\\user\\logout_success.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\user\\register_success.png",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\user\\register_success.png",
       "PackagePath": "staticwebassets\\content\\images\\user\\register_success.png"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\content\\images\\user\\verifyemail.jpg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\content\\images\\user\\verifyemail.jpg",
       "PackagePath": "staticwebassets\\content\\images\\user\\verifyemail.jpg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\css\\reponsive.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\css\\reponsive.css",
       "PackagePath": "staticwebassets\\css\\reponsive.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\css\\site.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\favicon.ico",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\js\\site.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\css\\all.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\css\\all.css",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\css\\all.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\index.html",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\index.html",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\index.html"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-brands-400.ttf",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-brands-400.ttf",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-brands-400.woff2",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-brands-400.woff2",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-duotone-900.ttf",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-duotone-900.ttf",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-duotone-900.ttf"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-duotone-900.woff2",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-duotone-900.woff2",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-duotone-900.woff2"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-light-300.ttf",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-light-300.ttf",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-light-300.ttf"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-light-300.woff2",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-light-300.woff2",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-light-300.woff2"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-regular-400.ttf",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-regular-400.ttf",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-regular-400.woff2",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-regular-400.woff2",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-sharp-light-300.ttf",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-sharp-light-300.ttf",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-sharp-light-300.ttf"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-sharp-light-300.woff2",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-sharp-light-300.woff2",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-sharp-light-300.woff2"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-sharp-regular-400.ttf",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-sharp-regular-400.ttf",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-sharp-regular-400.ttf"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-sharp-regular-400.woff2",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-sharp-regular-400.woff2",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-sharp-regular-400.woff2"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-sharp-solid-900.ttf",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-sharp-solid-900.ttf",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-sharp-solid-900.ttf"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-sharp-solid-900.woff2",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-sharp-solid-900.woff2",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-sharp-solid-900.woff2"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-solid-900.ttf",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-solid-900.ttf",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-solid-900.woff2",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-solid-900.woff2",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-solid-900.woff2"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-thin-100.ttf",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-thin-100.ttf",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-thin-100.ttf"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-thin-100.woff2",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-thin-100.woff2",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-thin-100.woff2"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-v4compatibility.ttf",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-v4compatibility.ttf",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-v4compatibility.ttf"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-v4compatibility.woff2",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\fontawesome\\webfonts\\fa-v4compatibility.woff2",
       "PackagePath": "staticwebassets\\lib\\fontawesome\\webfonts\\fa-v4compatibility.woff2"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\ajax-loader.gif",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\lib\\slick\\ajax-loader.gif"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\config.rb",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\config.rb",
       "PackagePath": "staticwebassets\\lib\\slick\\config.rb"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\fonts\\slick.eot",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\fonts\\slick.eot",
       "PackagePath": "staticwebassets\\lib\\slick\\fonts\\slick.eot"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\fonts\\slick.svg",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\fonts\\slick.svg",
       "PackagePath": "staticwebassets\\lib\\slick\\fonts\\slick.svg"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\fonts\\slick.ttf",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\fonts\\slick.ttf",
       "PackagePath": "staticwebassets\\lib\\slick\\fonts\\slick.ttf"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\fonts\\slick.woff",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\fonts\\slick.woff",
       "PackagePath": "staticwebassets\\lib\\slick\\fonts\\slick.woff"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\slick-theme.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\slick-theme.css",
       "PackagePath": "staticwebassets\\lib\\slick\\slick-theme.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\slick-theme.less",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\slick-theme.less",
       "PackagePath": "staticwebassets\\lib\\slick\\slick-theme.less"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\slick-theme.scss",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\slick-theme.scss",
       "PackagePath": "staticwebassets\\lib\\slick\\slick-theme.scss"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\slick.css",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\slick.css",
       "PackagePath": "staticwebassets\\lib\\slick\\slick.css"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\slick.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\slick.js",
       "PackagePath": "staticwebassets\\lib\\slick\\slick.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\slick.less",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\slick.less",
       "PackagePath": "staticwebassets\\lib\\slick\\slick.less"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\slick.min.js",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\slick.min.js",
       "PackagePath": "staticwebassets\\lib\\slick\\slick.min.js"
     },
     {
-      "Id": "D:\\WebBurgelo\\WebBurgelo\\wwwroot\\lib\\slick\\slick.scss",
+      "Id": "D:\\Project\\WebBurgelo\\wwwroot\\lib\\slick\\slick.scss",
       "PackagePath": "staticwebassets\\lib\\slick\\slick.scss"
     },
     {
